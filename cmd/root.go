@@ -12,10 +12,37 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "prox",
 	Short: "⚡ Process manager TUI",
-	Long: `prox ⚡ - A modern process manager with a beautiful TUI
+	Long: `                        -------------
 
-Universal process management for applications in any language.
-Inspired by pm2, built with Go and Bubbletea.`,
+                   ██████╗ ██████╗  ██████╗ ██╗  ██╗
+                   ██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝
+                   ███████╔╝██████╔╝██║   ██║ ╚███╔╝
+                   ██╔═══╝ ██╔══██╗██║   ██║ ██╔██╗
+                   ██║     ██║  ██║╚██████╔╝██╔╝ ██╗
+                   ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
+
+                               ⚡ Process Manager ⚡
+
+        prox is a modern process manager with a beautiful TUI
+             for applications in any language.
+
+                Start any application:
+                $ prox start app.py
+
+                Launch interactive TUI (default):
+                $ prox
+
+                Monitor processes in detail:
+                $ prox monitor
+
+                View process logs:
+                $ prox logs my-app
+
+                To go further checkout:
+                https://github.com/craigderington/prox
+
+
+                        -------------`,
 	Run: func(cmd *cobra.Command, args []string) {
 		// If no subcommand, launch TUI
 		if err := launchTUI(); err != nil {

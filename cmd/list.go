@@ -3,11 +3,17 @@ package cmd
 import (
 	"fmt"
 	"os"
-	"text/tabwriter"
+	"strings"
 
 	"github.com/charmbracelet/lipgloss"
+	"github.com/charmbracelet/lipgloss/table"
+	"github.com/craigderington/prox/internal/banner"
 	"github.com/craigderington/prox/internal/process"
 	"github.com/spf13/cobra"
+)
+
+var (
+	showBanner bool
 )
 
 var listCmd = &cobra.Command{
@@ -25,71 +31,146 @@ var listCmd = &cobra.Command{
 
 		processes := mgr.List()
 
+		// Show banner if requested or if no processes
+		if showBanner || len(processes) == 0 {
+			fmt.Println(banner.Render())
+		}
+
 		if len(processes) == 0 {
-			PrintMuted("No processes running. Use 'prox start <script>' to add processes.")
+			PrintMuted("No processes running. Get started:")
+			PrintMuted("  $ prox init              # Auto-discover services")
+			PrintMuted("  $ prox start app.js      # Start a single process")
 			return
 		}
 
-		// Print header
-		headerStyle := lipgloss.NewStyle().Foreground(colorInfo).Bold(true)
-		fmt.Println(headerStyle.Render("⚡ prox - Process List"))
-		fmt.Println()
+		// Print compact header if banner not shown
+		if !showBanner {
+			headerStyle := lipgloss.NewStyle().Foreground(colorInfo).Bold(true)
+			fmt.Println(headerStyle.Render("⚡ prox - Process List"))
+			fmt.Println()
+		}
 
-		// Create table writer
-		w := tabwriter.NewWriter(os.Stdout, 0, 0, 3, ' ', 0)
-		fmt.Fprintln(w, headerStyle.Render("NAME")+"\t"+
-			headerStyle.Render("STATUS")+"\t"+
-			headerStyle.Render("PID")+"\t"+
-			headerStyle.Render("RESTARTS")+"\t"+
-			headerStyle.Render("UPTIME")+"\t"+
-			headerStyle.Render("SCRIPT"))
+		// Collect metrics for all processes
+		collector := process.NewMetricsCollector(mgr)
+		metricsMap := collector.CollectAllMetrics()
 
-		for _, proc := range processes {
-			pid := "-"
-			if proc.PID > 0 {
-				pid = fmt.Sprintf("%d", proc.PID)
-			}
+		// Build table rows
+		rows := [][]string{}
+		for i, proc := range processes {
+			metrics := metricsMap[proc.ID]
 
 			uptime := "-"
 			if proc.Status == process.StatusOnline {
-				uptime = formatDuration(proc.Uptime())
+				uptime = process.FormatDuration(proc.Uptime())
 			}
 
-			// Color-code status
+			// CPU and Memory
+			cpu := "-"
+			mem := "-"
+			if metrics != nil && proc.Status == process.StatusOnline {
+				cpu = fmt.Sprintf("%.1f%%", metrics.CPU)
+				mem = process.FormatBytes(metrics.Memory)
+			}
+
+			// Status with symbol
 			statusStr := string(proc.Status)
-			var statusStyled string
+			var statusWithSymbol string
 			switch proc.Status {
 			case process.StatusOnline:
-				statusStyled = successStyle.Render("● " + statusStr)
+				statusWithSymbol = "● " + statusStr
 			case process.StatusStopped:
-				statusStyled = mutedStyle.Render("○ " + statusStr)
+				statusWithSymbol = "○ " + statusStr
 			case process.StatusErrored:
-				statusStyled = errorStyle.Render("✗ " + statusStr)
+				statusWithSymbol = "✗ " + statusStr
 			case process.StatusRestarting:
-				statusStyled = warningStyle.Render("↻ " + statusStr)
+				statusWithSymbol = "↻ " + statusStr
 			default:
-				statusStyled = statusStr
+				statusWithSymbol = statusStr
 			}
 
-			fmt.Fprintf(w, "%s\t%s\t%s\t%d\t%s\t%s\n",
+			rows = append(rows, []string{
+				fmt.Sprintf("%d", i),
 				proc.Name,
-				statusStyled,
-				pid,
-				proc.Restarts,
+				statusWithSymbol,
+				fmt.Sprintf("%d", proc.Restarts),
+				cpu,
+				mem,
 				uptime,
-				mutedStyle.Render(proc.Script),
-			)
+				proc.Script,
+			})
 		}
 
-		w.Flush()
-	},
-}
+		// Create beautiful lipgloss table
+		colorBorder := lipgloss.Color("#45475A")
+		tableHeaderStyle := lipgloss.NewStyle().
+			Foreground(colorInfo).
+			Bold(true).
+			Align(lipgloss.Left)
 
-func formatDuration(d interface{}) string {
-	// This will be implemented with proper duration formatting
-	return fmt.Sprintf("%v", d)
+		t := table.New().
+			Border(lipgloss.RoundedBorder()).
+			BorderStyle(lipgloss.NewStyle().Foreground(colorBorder)).
+			StyleFunc(func(row, col int) lipgloss.Style {
+				// Header row
+				if row == 0 {
+					return tableHeaderStyle
+				}
+
+				// Bounds check for data rows
+				dataRow := row - 1
+				if dataRow < 0 || dataRow >= len(rows) {
+					return lipgloss.NewStyle()
+				}
+
+				// Status column (col 1) - apply color coding
+				if col == 1 {
+					// Get the status text from the row
+					statusText := rows[dataRow][col]
+					// Check what status it contains
+					if strings.HasPrefix(statusText, "●") { // online
+						return successStyle
+					} else if strings.HasPrefix(statusText, "○") { // stopped
+						return mutedStyle
+					} else if strings.HasPrefix(statusText, "✗") { // errored
+						return errorStyle
+					} else if strings.HasPrefix(statusText, "↻") { // restarting
+						return warningStyle
+					}
+					return lipgloss.NewStyle()
+				}
+
+				// CPU column - color by usage
+				if col == 4 {
+					return lipgloss.NewStyle().Foreground(colorInfo)
+				}
+
+				// Memory column - color by usage
+				if col == 5 {
+					return lipgloss.NewStyle().Foreground(colorWarning)
+				}
+
+				// Script column (last column) - muted
+				if col == 7 {
+					return mutedStyle
+				}
+
+				// Default style
+				return lipgloss.NewStyle()
+			}).
+			Headers("ID", "NAME", "STATUS", "↺", "CPU", "MEMORY", "UPTIME", "SCRIPT").
+			Rows(rows...)
+
+		// Add some padding around the table
+		tableOutput := t.Render()
+		paddedOutput := lipgloss.NewStyle().
+			Padding(0, 1).
+			Render(tableOutput)
+
+		fmt.Println(paddedOutput)
+	},
 }
 
 func init() {
 	rootCmd.AddCommand(listCmd)
+	listCmd.Flags().BoolVarP(&showBanner, "banner", "b", false, "Show prox banner and info")
 }

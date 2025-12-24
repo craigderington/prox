@@ -1,0 +1,11 @@
+services:
+    web:
+        command: python test_app.py
+        cwd: /home/craig/Work/prox
+        instances: 1
+        restart: on-failure
+    worker:
+        command: python cpu_test.py
+        cwd: /home/craig/Work/prox
+        instances: 1
+        restart: on-failure

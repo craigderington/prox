@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/bubbles/viewport"
+	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/craigderington/prox/internal/logs"
 	"github.com/craigderington/prox/internal/process"
@@ -19,33 +19,33 @@ const (
 
 // LogsModel represents the logs view state
 type LogsModel struct {
-	manager     *process.Manager
-	storage     *storage.Storage
-	processName string
-	viewport    viewport.Model
-	entries     []logs.LogEntry
-	lineCount   int // Track line count for incremental updates
-	followMode  bool
-	loading     bool
-	err         error
+	manager       *process.Manager
+	storage       *storage.Storage
+	processName   string
+	viewport      viewport.Model
+	entries       []logs.LogEntry
+	totalLogsSeen int // Track total logs seen for incremental updates
+	followMode    bool
+	loading       bool
+	err           error
 }
 
 // NewLogsModel creates a new logs view model
 func NewLogsModel(manager *process.Manager, storage *storage.Storage, processName string, width, height int) LogsModel {
-	vp := viewport.New(width-4, height-8) // Leave room for header/footer
+	vp := viewport.New(width-4, height-10) // Leave more room for header
 	vp.MouseWheelEnabled = true
 	vp.MouseWheelDelta = 3
 
 	return LogsModel{
-		manager:     manager,
-		storage:     storage,
-		processName: processName,
-		viewport:    vp,
-		entries:     []logs.LogEntry{},
-		lineCount:   0,
-		followMode:  true,
-		loading:     true,
-		err:         nil,
+		manager:       manager,
+		storage:       storage,
+		processName:   processName,
+		viewport:      vp,
+		entries:       []logs.LogEntry{},
+		totalLogsSeen: 0,
+		followMode:    true,
+		loading:       true,
+		err:           nil,
 	}
 }
 
@@ -95,36 +95,114 @@ func (m LogsModel) Update(msg tea.Msg) (LogsModel, tea.Cmd) {
 				m.viewport.GotoBottom()
 			}
 			return m, nil
+
+		case "r":
+			// Refresh logs
+			m.entries = []logs.LogEntry{}
+			m.totalLogsSeen = 0
+			m.loading = true
+			return m, loadLogsCmd(m.storage, m.processName, 100)
 		}
 
 	case tea.WindowSizeMsg:
 		m.viewport.Width = msg.Width - 4
-		m.viewport.Height = msg.Height - 8
+		m.viewport.Height = msg.Height - 10
 		m.updateViewportContent()
+		return m, nil
+
+	case logEntriesMsg:
+		if len(msg) > 0 {
+			if len(m.entries) == 0 {
+				// Initial load
+				m.entries = msg
+				m.totalLogsSeen = len(msg)
+				m.loading = false
+				m.updateViewportContent()
+				if m.followMode {
+					m.viewport.GotoBottom()
+				}
+				// Start continuous tailing after initial load
+				return m, tailLogsCmd(m.storage, m.processName, m.totalLogsSeen)
+			} else {
+				// Incremental update
+				m.entries = append(m.entries, msg...)
+				m.totalLogsSeen += len(msg)
+
+				// Cap at max lines
+				if len(m.entries) > maxLogLines {
+					m.entries = m.entries[len(m.entries)-maxLogLines:]
+					// Don't change totalLogsSeen when capping
+				}
+
+				m.updateViewportContent()
+
+				// Ensure we scroll to bottom when following
+				if m.followMode {
+					m.viewport.GotoBottom()
+				}
+			}
+		}
+		// Continue tailing
+		return m, tailLogsCmd(m.storage, m.processName, m.totalLogsSeen)
+
+	case logTickMsg:
+		// Continue tailing on tick
+		return m, tailLogsCmd(m.storage, m.processName, m.totalLogsSeen)
+
+	case logErrorMsg:
+		m.err = error(msg)
+		m.loading = false
 		return m, nil
 	}
 
 	return m, nil
 }
 
+// renderLogsHeader renders the header with title and log stats
+func renderLogsHeader(m LogsModel) string {
+	title := titleStyle.Render("⚡ prox - Logs")
+
+	// Log stats - more compact
+	totalLogs := m.totalLogsSeen
+	displayedLogs := len(m.entries)
+	followStatus := "OFF"
+	if m.followMode {
+		followStatus = "ON"
+	}
+
+	// Single line stats - truncate process name if too long
+	processName := m.processName
+	if len(processName) > 15 {
+		processName = processName[:12] + "..."
+	}
+	statsText := fmt.Sprintf("Process: %s • Total: %d • Displayed: %d • Follow: %s",
+		processName, totalLogs, displayedLogs, followStatus)
+
+	stats := lipgloss.NewStyle().
+		Foreground(colorMuted).
+		Render(statsText)
+
+	header := lipgloss.JoinVertical(
+		lipgloss.Left,
+		title,
+		stats,
+	)
+
+	return header
+}
+
 // View renders the logs view
 func (m LogsModel) View() string {
 	var b strings.Builder
 
-	// Header with process name and status
-	header := lipgloss.JoinVertical(
-		lipgloss.Left,
-		titleStyle.Render("⚡ prox - Logs"),
-		lipgloss.NewStyle().
-			Foreground(colorMuted).
-			Render(fmt.Sprintf("Process: %s", m.processName)),
-	)
+	// Header with title and stats (similar to dashboard)
+	header := renderLogsHeader(m)
 
 	// Box the header
 	headerBox := lipgloss.NewStyle().
 		BorderStyle(lipgloss.RoundedBorder()).
 		BorderForeground(colorBorder).
-		Padding(1, 2).
+		Padding(0, 0). // Reduce padding to save space
 		Width(m.viewport.Width + 4).
 		Render(header)
 

@@ -5,6 +5,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"sort"
 	"sync"
 	"syscall"
 	"time"
@@ -49,17 +50,26 @@ func (m *Manager) Start(config ProcessConfig) (*Process, error) {
 		}
 	}
 
+	// Set default restart policy
+	restartPolicy := config.Restart
+	if restartPolicy == "" {
+		restartPolicy = RestartOnFailure
+	}
+
 	// Create process
 	proc := &Process{
-		ID:          uuid.New().String(),
-		Name:        config.Name,
-		Script:      config.Script,
-		Interpreter: config.Interpreter,
-		Args:        config.Args,
-		Cwd:         config.Cwd,
-		Status:      StatusStopped,
-		stopCh:      make(chan struct{}),
-		logStopCh:   make(chan struct{}),
+		ID:            uuid.New().String(),
+		Name:          config.Name,
+		Script:        config.Script,
+		Interpreter:   config.Interpreter,
+		Args:          config.Args,
+		Cwd:           config.Cwd,
+		Status:        StatusStopped,
+		RestartPolicy: restartPolicy,
+		DependsOn:     config.DependsOn,
+		stopCh:        make(chan struct{}),
+		logStopCh:     make(chan struct{}),
+		manager:       m,
 	}
 
 	// Prepare environment variables
@@ -129,16 +139,22 @@ func (m *Manager) startProcess(proc *Process) error {
 		cmd.Stdout = outFile
 		cmd.Stderr = errFile
 
-		// Close files when process exits
-		go func() {
-			cmd.Wait()
-			outFile.Close()
-			errFile.Close()
-		}()
+		// Store file handles for cleanup later
+		proc.logFiles.stdout = outFile
+		proc.logFiles.stderr = errFile
 	}
 
 	// Start the process
 	if err := cmd.Start(); err != nil {
+		// Clean up log files if start failed
+		if proc.logFiles.stdout != nil {
+			proc.logFiles.stdout.Close()
+			proc.logFiles.stdout = nil
+		}
+		if proc.logFiles.stderr != nil {
+			proc.logFiles.stderr.Close()
+			proc.logFiles.stderr = nil
+		}
 		proc.Status = StatusErrored
 		return fmt.Errorf("failed to start process: %w", err)
 	}
@@ -173,19 +189,80 @@ func (m *Manager) monitorProcess(proc *Process) {
 	default:
 	}
 
-	// Unexpected exit - mark as errored
-	proc.Status = StatusErrored
-	now := time.Now()
-	proc.StoppedAt = &now
+	// Unexpected exit
 	proc.Restarts++
+	exitCode := 0
+	if err != nil {
+		if exitErr, ok := err.(*exec.ExitError); ok {
+			exitCode = exitErr.ExitCode()
+		}
+	}
 
 	// Log the error
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "[prox] Process '%s' (PID %d) exited with error: %v\n",
-			proc.Name, proc.PID, err)
+		fmt.Fprintf(os.Stderr, "[prox] Process '%s' (PID %d) exited with error (code %d): %v\n",
+			proc.Name, proc.PID, exitCode, err)
 	} else {
 		fmt.Fprintf(os.Stderr, "[prox] Process '%s' (PID %d) exited unexpectedly\n",
 			proc.Name, proc.PID)
+	}
+
+	// Determine if we should restart based on policy
+	shouldRestart := false
+	switch proc.RestartPolicy {
+	case RestartAlways:
+		shouldRestart = true
+		fmt.Fprintf(os.Stderr, "[prox] Restarting '%s' (policy: always)...\n", proc.Name)
+	case RestartOnFailure:
+		if exitCode != 0 {
+			shouldRestart = true
+			fmt.Fprintf(os.Stderr, "[prox] Restarting '%s' (policy: on-failure, exit code: %d)...\n",
+				proc.Name, exitCode)
+		}
+	case RestartNever:
+		shouldRestart = false
+	}
+
+	if shouldRestart {
+		// Close old log files
+		if proc.logFiles.stdout != nil {
+			proc.logFiles.stdout.Close()
+			proc.logFiles.stdout = nil
+		}
+		if proc.logFiles.stderr != nil {
+			proc.logFiles.stderr.Close()
+			proc.logFiles.stderr = nil
+		}
+
+		// Recreate channels
+		proc.stopCh = make(chan struct{})
+		proc.logStopCh = make(chan struct{})
+
+		// Brief delay before restart
+		time.Sleep(1 * time.Second)
+
+		// Attempt restart
+		if err := m.startProcess(proc); err != nil {
+			fmt.Fprintf(os.Stderr, "[prox] Failed to restart '%s': %v\n", proc.Name, err)
+			proc.Status = StatusErrored
+			now := time.Now()
+			proc.StoppedAt = &now
+		}
+	} else {
+		// Mark as errored without restarting
+		proc.Status = StatusErrored
+		now := time.Now()
+		proc.StoppedAt = &now
+
+		// Close log files
+		if proc.logFiles.stdout != nil {
+			proc.logFiles.stdout.Close()
+			proc.logFiles.stdout = nil
+		}
+		if proc.logFiles.stderr != nil {
+			proc.logFiles.stderr.Close()
+			proc.logFiles.stderr = nil
+		}
 	}
 }
 
@@ -250,6 +327,16 @@ func (m *Manager) stopProcess(proc *Process) error {
 	now := time.Now()
 	proc.StoppedAt = &now
 
+	// Close log files
+	if proc.logFiles.stdout != nil {
+		proc.logFiles.stdout.Close()
+		proc.logFiles.stdout = nil
+	}
+	if proc.logFiles.stderr != nil {
+		proc.logFiles.stderr.Close()
+		proc.logFiles.stderr = nil
+	}
+
 	return nil
 }
 
@@ -313,6 +400,12 @@ func (m *Manager) List() []*Process {
 	for _, proc := range m.processes {
 		processes = append(processes, proc)
 	}
+
+	// Sort alphabetically by name for consistent ordering
+	sort.Slice(processes, func(i, j int) bool {
+		return processes[i].Name < processes[j].Name
+	})
+
 	return processes
 }
 

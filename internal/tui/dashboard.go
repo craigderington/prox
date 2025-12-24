@@ -17,6 +17,10 @@ func renderDashboard(m Model) string {
 	b.WriteString(renderHeader(m))
 	b.WriteString("\n")
 
+	// Start process input area (between header and process list)
+	b.WriteString(renderStartInput(m))
+	b.WriteString("\n")
+
 	// Process table (bordered)
 	b.WriteString(renderProcessTable(m))
 	b.WriteString("\n")
@@ -92,15 +96,57 @@ func renderHeader(m Model) string {
 		stats,
 	)
 
-	// Box the header
+	// Box the header with minimal margins
 	headerBox := lipgloss.NewStyle().
 		BorderStyle(lipgloss.RoundedBorder()).
 		BorderForeground(colorBorder).
-		Padding(1, 2).
-		Width(m.width - 4).
+		Padding(0, 1).
+		Width(m.width - 2).
 		Render(header)
 
 	return headerBox
+}
+
+// renderStartInput renders the start process input area
+func renderStartInput(m Model) string {
+	label := lipgloss.NewStyle().
+		Foreground(colorPrimary).
+		Bold(true).
+		Render("Start Process:")
+
+	inputBox := lipgloss.NewStyle().
+		BorderStyle(lipgloss.RoundedBorder()).
+		BorderForeground(func() lipgloss.Color {
+			if m.inputMode {
+				return colorPrimary
+			}
+			return colorBorder
+		}()).
+		Padding(0, 1).
+		Width(m.width - 2).
+		Render(lipgloss.JoinVertical(
+			lipgloss.Left,
+			label,
+			m.startInput.View(),
+		))
+
+	hint := lipgloss.NewStyle().
+		Foreground(colorMuted).
+		Italic(true).
+		Render("Press 'n' to start a new process • ESC to cancel • ENTER to submit")
+
+	if m.inputMode {
+		hint = lipgloss.NewStyle().
+			Foreground(colorWarning).
+			Italic(true).
+			Render("Type your command • ESC to cancel • ENTER to submit")
+	}
+
+	return lipgloss.JoinVertical(
+		lipgloss.Left,
+		inputBox,
+		hint,
+	)
 }
 
 // renderProcessTable renders the process table
@@ -109,14 +155,14 @@ func renderProcessTable(m Model) string {
 		emptyMsg := lipgloss.NewStyle().
 			Foreground(colorMuted).
 			Italic(true).
-			Padding(2, 4).
-			Render("No processes running. Use 'prox start <script>' to add processes.")
+			Padding(1, 2).
+			Render("No processes running. Press 'n' to start a new process.")
 
 		return lipgloss.NewStyle().
 			BorderStyle(lipgloss.RoundedBorder()).
 			BorderForeground(colorBorder).
-			Padding(1, 2).
-			Width(m.width - 4).
+			Padding(0, 1).
+			Width(m.width - 2).
 			Render(emptyMsg)
 	}
 
@@ -127,42 +173,30 @@ func renderProcessTable(m Model) string {
 		rows = append(rows, buildProcessRow(proc, metrics, i == m.selected))
 	}
 
-	// Create table with lipgloss table package
+	// Create table with lipgloss table package with rounded borders
 	t := table.New().
-		Border(lipgloss.NormalBorder()).
+		Border(lipgloss.RoundedBorder()).
 		BorderStyle(lipgloss.NewStyle().Foreground(colorBorder)).
 		StyleFunc(func(row, col int) lipgloss.Style {
-			// Header row (row 0) - explicitly return header style ONLY for row 0
+			// Header row
 			if row == 0 {
 				return tableHeaderStyle
 			}
 
-			// All other rows are data rows
-			// Calculate the actual process index (row 1 = process 0, row 2 = process 1, etc)
+			// Data rows
 			dataRow := row - 1
-
-			// Bounds check to prevent index out of range
 			if dataRow < 0 || dataRow >= len(rows) {
-				// Return normal cell style as fallback
-				return lipgloss.NewStyle().Foreground(colorText).Padding(0, 1)
+				return tableCellStyle
 			}
 
-			// Status column (col 1) - ALWAYS preserve status colors
-			// This must come before any other styling to ensure status colors are preserved
+			// Status column - always use status-specific colors
 			if col == 1 {
 				status := rows[dataRow][col]
 				return GetStatusStyle(status)
 			}
 
-			// For all other columns (not status), check if row is selected
-			if dataRow == m.selected {
-				// Selected row - normal text color with padding
-				return lipgloss.NewStyle().Foreground(colorText).Padding(0, 1)
-			}
-
-			// Default style for non-selected, non-status cells
-			// Explicitly set foreground to prevent any default coloring
-			return lipgloss.NewStyle().Foreground(colorText).Padding(0, 1)
+			// All other columns - use normal text color
+			return tableCellStyle
 		}).
 		Headers("NAME", "STATUS", "CPU", "MEMORY", "UPTIME", "RESTARTS", "PID").
 		Rows(rows...)
@@ -214,9 +248,11 @@ func buildProcessRow(proc *process.Process, metrics *process.ProcessMetrics, sel
 // renderFooter renders the footer with keyboard shortcuts
 func renderFooter(m Model) string {
 	help := []string{
+		"n new",
 		"↑/k up",
 		"↓/j down",
 		"enter monitor",
+		"l logs",
 		"r restart",
 		"s stop",
 		"d delete",
@@ -226,14 +262,14 @@ func renderFooter(m Model) string {
 
 	helpText := strings.Join(help, " • ")
 
-	// Box the footer
+	// Box the footer with minimal margins
 	footerBox := lipgloss.NewStyle().
 		BorderStyle(lipgloss.RoundedBorder()).
 		BorderTop(true).
 		BorderForeground(colorBorder).
 		Foreground(colorMuted).
-		Padding(0, 2).
-		Width(m.width - 4).
+		Padding(0, 1).
+		Width(m.width - 2).
 		Render(helpText)
 
 	return footerBox

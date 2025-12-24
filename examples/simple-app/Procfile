@@ -1,0 +1,2 @@
+web: python ../../test_app.py
+worker: python ../../cpu_test.py

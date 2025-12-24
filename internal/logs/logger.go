@@ -185,8 +185,8 @@ func ReadTail(filepath string, n int) ([]string, error) {
 		return nil, err
 	}
 
-	// Return last n lines
-	if len(lines) > n {
+	// Return last n lines (n == 0 means return all lines)
+	if n > 0 && len(lines) > n {
 		return lines[len(lines)-n:], nil
 	}
 

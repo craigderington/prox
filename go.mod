@@ -11,6 +11,7 @@ require (
 )
 
 require (
+	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/charmbracelet/bubbles v0.21.0 // indirect
 	github.com/charmbracelet/colorprofile v0.2.3-0.20250311203215-f60798e515dc // indirect
@@ -38,4 +39,5 @@ require (
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	golang.org/x/sys v0.36.0 // indirect
 	golang.org/x/text v0.3.8 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

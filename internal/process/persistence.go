@@ -119,6 +119,16 @@ func processExists(pid int) bool {
 	return err == nil
 }
 
+// SaveState saves manager state (convenience wrapper)
+func SaveState(m *Manager, storage *storage.Storage) error {
+	return m.SaveState(storage)
+}
+
+// LoadState loads manager state (convenience wrapper)
+func LoadState(m *Manager, storage *storage.Storage) error {
+	return m.LoadState(storage)
+}
+
 // RestoreRunningProcesses attempts to restore monitoring for running processes
 func (m *Manager) RestoreRunningProcesses() error {
 	m.mu.RLock()

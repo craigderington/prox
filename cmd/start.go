@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-	"text/tabwriter"
+	"strings"
 
 	"github.com/charmbracelet/lipgloss"
+	"github.com/charmbracelet/lipgloss/table"
 	"github.com/craigderington/prox/internal/process"
 	"github.com/spf13/cobra"
 )
@@ -19,17 +20,22 @@ var (
 )
 
 var startCmd = &cobra.Command{
-	Use:   "start <script>",
-	Short: "Start a process",
-	Long: `Start a new process and add it to the process manager
+	Use:   "start [script]",
+	Short: "Start a process or all services from prox.yml",
+	Long: `Start a new process or all services from prox.yml
 
 Examples:
+  prox start                           # Start all services from prox.yml
   prox start app.js                    # Start app.js with auto-detected name
   prox start app.js --name my-api      # Start with custom name "my-api"
   prox start server.py -n backend      # Start with short flag
   prox start app.js -i node            # Specify interpreter`,
-	Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
+		// If no args, try to start from prox.yml
+		if len(args) == 0 {
+			startAllCmd.Run(cmd, args)
+			return
+		}
 		script := args[0]
 
 		// Use script name as process name if not provided
@@ -128,53 +134,101 @@ func renderProcessTable(processes []*process.Process) {
 		return
 	}
 
-	// Create table writer
-	w := tabwriter.NewWriter(os.Stdout, 0, 0, 3, ' ', 0)
-	headerStyle := lipgloss.NewStyle().Foreground(colorInfo).Bold(true)
-
-	fmt.Fprintln(w, headerStyle.Render("ID")+"\t"+
-		headerStyle.Render("NAME")+"\t"+
-		headerStyle.Render("STATUS")+"\t"+
-		headerStyle.Render("PID")+"\t"+
-		headerStyle.Render("RESTARTS")+"\t"+
-		headerStyle.Render("SCRIPT"))
-
+	// Build table rows
+	rows := [][]string{}
 	for i, proc := range processes {
 		pid := "-"
 		if proc.PID > 0 {
 			pid = fmt.Sprintf("%d", proc.PID)
 		}
 
-		// Color-code status
+		// Status with symbol
 		statusStr := string(proc.Status)
-		var statusStyled string
+		var statusWithSymbol string
 		switch proc.Status {
 		case process.StatusOnline:
-			statusStyled = successStyle.Render("● " + statusStr)
+			statusWithSymbol = "● " + statusStr
 		case process.StatusStopped:
-			statusStyled = mutedStyle.Render("○ " + statusStr)
+			statusWithSymbol = "○ " + statusStr
 		case process.StatusErrored:
-			statusStyled = errorStyle.Render("✗ " + statusStr)
+			statusWithSymbol = "✗ " + statusStr
 		case process.StatusRestarting:
-			statusStyled = warningStyle.Render("↻ " + statusStr)
+			statusWithSymbol = "↻ " + statusStr
 		default:
-			statusStyled = statusStr
+			statusWithSymbol = statusStr
 		}
 
-		// ID in cyan
-		idStyled := lipgloss.NewStyle().Foreground(colorInfo).Render(fmt.Sprintf("%d", i))
-
-		fmt.Fprintf(w, "%s\t%s\t%s\t%s\t%d\t%s\n",
-			idStyled,
+		rows = append(rows, []string{
+			fmt.Sprintf("%d", i),
 			proc.Name,
-			statusStyled,
+			statusWithSymbol,
 			pid,
-			proc.Restarts,
-			mutedStyle.Render(proc.Script),
-		)
+			fmt.Sprintf("%d", proc.Restarts),
+			proc.Script,
+		})
 	}
 
-	w.Flush()
+	// Create beautiful lipgloss table
+	colorBorder := lipgloss.Color("#45475A")
+	tableHeaderStyle := lipgloss.NewStyle().
+		Foreground(colorInfo).
+		Bold(true).
+		Align(lipgloss.Left).
+		Padding(0, 1)
+
+	t := table.New().
+		Border(lipgloss.RoundedBorder()).
+		BorderStyle(lipgloss.NewStyle().Foreground(colorBorder)).
+		StyleFunc(func(row, col int) lipgloss.Style {
+			// Header row
+			if row == 0 {
+				return tableHeaderStyle
+			}
+
+			// Bounds check for data rows
+			dataRow := row - 1
+			if dataRow < 0 || dataRow >= len(rows) {
+				return lipgloss.NewStyle()
+			}
+
+			// ID column (col 0) - cyan
+			if col == 0 {
+				return lipgloss.NewStyle().Foreground(colorInfo).Padding(0, 1)
+			}
+
+			// Status column (col 2) - apply color coding
+			if col == 2 {
+				statusText := rows[dataRow][col]
+				if strings.HasPrefix(statusText, "●") {
+					return successStyle
+				} else if strings.HasPrefix(statusText, "○") {
+					return mutedStyle
+				} else if strings.HasPrefix(statusText, "✗") {
+					return errorStyle
+				} else if strings.HasPrefix(statusText, "↻") {
+					return warningStyle
+				}
+				return lipgloss.NewStyle()
+			}
+
+			// Script column (last column) - muted
+			if col == 5 {
+				return mutedStyle
+			}
+
+			// Default style
+			return lipgloss.NewStyle().Padding(0, 1)
+		}).
+		Headers("ID", "NAME", "STATUS", "PID", "RESTARTS", "SCRIPT").
+		Rows(rows...)
+
+	// Add some padding around the table
+	tableOutput := t.Render()
+	paddedOutput := lipgloss.NewStyle().
+		Padding(0, 1).
+		Render(tableOutput)
+
+	fmt.Println(paddedOutput)
 }
 
 func init() {

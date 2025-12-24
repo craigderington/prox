@@ -6,14 +6,14 @@ import (
 
 var (
 	// Color palette
-	colorPrimary   = lipgloss.Color("#00D9FF") // Cyan/electric blue
-	colorSuccess   = lipgloss.Color("#00FF87") // Green
-	colorWarning   = lipgloss.Color("#FFD700") // Yellow
-	colorDanger    = lipgloss.Color("#FF5F87") // Red
-	colorMuted     = lipgloss.Color("#6C7086") // Gray
-	colorBorder    = lipgloss.Color("#45475A") // Dark gray
-	colorBg        = lipgloss.Color("#1E1E2E") // Dark background
-	colorText      = lipgloss.Color("#CDD6F4") // Light text
+	colorPrimary = lipgloss.Color("#00D9FF") // Cyan/electric blue
+	colorSuccess = lipgloss.Color("#00FF87") // Green
+	colorWarning = lipgloss.Color("#FFD700") // Yellow
+	colorDanger  = lipgloss.Color("#FF5F87") // Red
+	colorMuted   = lipgloss.Color("#6C7086") // Gray
+	colorBorder  = lipgloss.Color("#45475A") // Dark gray
+	colorBg      = lipgloss.Color("#1E1E2E") // Dark background
+	colorText    = lipgloss.Color("#CDD6F4") // Light text
 
 	// Title style
 	titleStyle = lipgloss.NewStyle().
@@ -31,24 +31,29 @@ var (
 	// Status styles
 	statusOnlineStyle = lipgloss.NewStyle().
 				Foreground(colorSuccess).
-				Bold(true)
+				Bold(true).
+				Padding(0, 1)
 
 	statusStoppedStyle = lipgloss.NewStyle().
-				Foreground(colorMuted)
+				Foreground(colorWarning).
+				Padding(0, 1)
 
 	statusErroredStyle = lipgloss.NewStyle().
 				Foreground(colorDanger).
-				Bold(true)
+				Bold(true).
+				Padding(0, 1)
 
 	statusRestartingStyle = lipgloss.NewStyle().
 				Foreground(colorWarning).
-				Bold(true)
+				Bold(true).
+				Padding(0, 1)
 
 	// Table styles
 	tableHeaderStyle = lipgloss.NewStyle().
 				Foreground(colorPrimary).
 				Bold(true).
-				Align(lipgloss.Left)
+				Align(lipgloss.Left).
+				Padding(0, 1)
 
 	tableCellStyle = lipgloss.NewStyle().
 			Foreground(colorText).
