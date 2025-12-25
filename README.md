@@ -5,6 +5,8 @@ A modern, powerful process manager with a beautiful Terminal User Interface (TUI
 ![prox](https://img.shields.io/badge/go-1.25+-00ADD8?style=flat&logo=go)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+![prox](https://github.com/craigderington/prox/blob/master/assets/prox-monitor.png)
+
 ## ✨ Features
 
 - 🚀 **Universal Process Management** - Run applications in any language (Node.js, Python, Go, Rust, Ruby, Bash, etc.)
