@@ -7,6 +7,7 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/lipgloss/table"
 	"github.com/craigderington/prox/internal/process"
+	"github.com/craigderington/prox/internal/version"
 )
 
 // renderDashboard renders the main dashboard view
@@ -33,7 +34,27 @@ func renderDashboard(m Model) string {
 
 // renderHeader renders the header with title and stats
 func renderHeader(m Model) string {
+	// Title on the left
 	title := titleStyle.Render("⚡ prox")
+
+	// Version on the right in muted grey
+	versionText := lipgloss.NewStyle().
+		Foreground(colorMuted).
+		Render(version.Version)
+
+	// Calculate spacing to push version to the right
+	titleWidth := lipgloss.Width(title)
+	versionWidth := lipgloss.Width(versionText)
+	availableWidth := m.width - 6 // Account for borders and padding
+	spacingWidth := availableWidth - titleWidth - versionWidth
+
+	spacing := ""
+	if spacingWidth > 0 {
+		spacing = strings.Repeat(" ", spacingWidth)
+	}
+
+	// Combine title and version on the same line
+	titleLine := lipgloss.JoinHorizontal(lipgloss.Left, title, spacing, versionText)
 
 	// Count processes by status
 	online := 0
@@ -66,8 +87,8 @@ func renderHeader(m Model) string {
 		Render(fmt.Sprintf("● %d Online", online))
 
 	stoppedBox := lipgloss.NewStyle().
-		Foreground(colorMuted).
-		Background(lipgloss.Color("#2a2a2a")).
+		Foreground(colorWarning).
+		Background(lipgloss.Color("#3a3000")).
 		Padding(0, 2).
 		Render(fmt.Sprintf("○ %d Stopped", stopped))
 
@@ -91,7 +112,7 @@ func renderHeader(m Model) string {
 
 	header := lipgloss.JoinVertical(
 		lipgloss.Left,
-		title,
+		titleLine,
 		"",
 		stats,
 	)
@@ -183,20 +204,8 @@ func renderProcessTable(m Model) string {
 				return tableHeaderStyle
 			}
 
-			// Data rows
-			dataRow := row - 1
-			if dataRow < 0 || dataRow >= len(rows) {
-				return tableCellStyle
-			}
-
-			// Status column - always use status-specific colors
-			if col == 1 {
-				status := rows[dataRow][col]
-				return GetStatusStyle(status)
-			}
-
-			// All other columns - use normal text color
-			return tableCellStyle
+			// Data rows - styling is now applied directly to cell content
+			return lipgloss.NewStyle()
 		}).
 		Headers("NAME", "STATUS", "CPU", "MEMORY", "UPTIME", "RESTARTS", "PID").
 		Rows(rows...)
@@ -206,6 +215,27 @@ func renderProcessTable(m Model) string {
 
 // buildProcessRow creates a row of data for the table
 func buildProcessRow(proc *process.Process, metrics *process.ProcessMetrics, selected bool) []string {
+	// Base styles
+	nameStyle := tableCellStyle
+	statusStyle := GetStatusStyle(string(proc.Status))
+	cpuStyle := tableCellStyle
+	memStyle := tableCellStyle
+	uptimeStyle := tableCellStyle
+	restartsStyle := tableCellStyle
+	pidStyle := tableCellStyle
+
+	// Selected row styling
+	if selected {
+		selectBg := lipgloss.Color("#313244")
+		nameStyle = nameStyle.Background(selectBg).Foreground(colorText).Bold(true)
+		statusStyle = statusStyle.Background(selectBg).Bold(true)
+		cpuStyle = cpuStyle.Background(selectBg).Foreground(colorText).Bold(true)
+		memStyle = memStyle.Background(selectBg).Foreground(colorText).Bold(true)
+		uptimeStyle = uptimeStyle.Background(selectBg).Foreground(colorText).Bold(true)
+		restartsStyle = restartsStyle.Background(selectBg).Foreground(colorText).Bold(true)
+		pidStyle = pidStyle.Background(selectBg).Foreground(colorText).Bold(true)
+	}
+
 	// Name - add selection indicator
 	name := truncate(proc.Name, 18)
 	if selected {
@@ -242,7 +272,16 @@ func buildProcessRow(proc *process.Process, metrics *process.ProcessMetrics, sel
 		pid = fmt.Sprintf("%d", proc.PID)
 	}
 
-	return []string{name, status, cpu, mem, uptime, restarts, pid}
+	// Apply styles and return
+	return []string{
+		nameStyle.Render(name),
+		statusStyle.Render(status),
+		cpuStyle.Render(cpu),
+		memStyle.Render(mem),
+		uptimeStyle.Render(uptime),
+		restartsStyle.Render(restarts),
+		pidStyle.Render(pid),
+	}
 }
 
 // renderFooter renders the footer with keyboard shortcuts

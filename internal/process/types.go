@@ -20,20 +20,20 @@ const (
 
 // Process represents a managed process
 type Process struct {
-	ID             string        `json:"id"`
-	Name           string        `json:"name"`
-	Script         string        `json:"script"`
-	Interpreter    string        `json:"interpreter"` // e.g., "node", "python", "go", ""
-	Args           []string      `json:"args"`
-	Cwd            string        `json:"cwd"`
-	Env            []string      `json:"env"`
-	PID            int           `json:"pid"`
-	Status         ProcessStatus `json:"status"`
-	Restarts       int           `json:"restarts"`
-	StartedAt      time.Time     `json:"started_at"`
-	StoppedAt      *time.Time    `json:"stopped_at,omitempty"`
-	RestartPolicy  RestartPolicy `json:"restart_policy"`
-	DependsOn      []string      `json:"depends_on,omitempty"`
+	ID            string        `json:"id"`
+	Name          string        `json:"name"`
+	Script        string        `json:"script"`
+	Interpreter   string        `json:"interpreter"` // e.g., "node", "python", "go", ""
+	Args          []string      `json:"args"`
+	Cwd           string        `json:"cwd"`
+	Env           []string      `json:"env"`
+	PID           int           `json:"pid"`
+	Status        ProcessStatus `json:"status"`
+	Restarts      int           `json:"restarts"`
+	StartedAt     time.Time     `json:"started_at"`
+	StoppedAt     *time.Time    `json:"stopped_at,omitempty"`
+	RestartPolicy RestartPolicy `json:"restart_policy"`
+	DependsOn     []string      `json:"depends_on,omitempty"`
 
 	// Runtime state (not persisted)
 	cmd       *exec.Cmd
@@ -44,7 +44,7 @@ type Process struct {
 		stdout *os.File
 		stderr *os.File
 	}
-	manager   *Manager // Reference to manager for auto-restart
+	manager *Manager // Reference to manager for auto-restart
 }
 
 // ProcessMetrics holds real-time metrics for a process
@@ -54,6 +54,8 @@ type ProcessMetrics struct {
 	Memory        uint64 // bytes
 	MemoryPercent float64
 	Uptime        time.Duration
+	NetSent       uint64 // bytes sent
+	NetRecv       uint64 // bytes received
 }
 
 // RestartPolicy defines how a process should be restarted

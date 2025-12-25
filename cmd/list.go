@@ -119,24 +119,24 @@ var listCmd = &cobra.Command{
 				// Bounds check for data rows
 				dataRow := row - 1
 				if dataRow < 0 || dataRow >= len(rows) {
-					return lipgloss.NewStyle()
+					return mutedStyle
 				}
 
-				// Status column (col 1) - apply color coding
-				if col == 1 {
+				// Status column (col 2) - apply color coding
+				if col == 2 {
 					// Get the status text from the row
 					statusText := rows[dataRow][col]
 					// Check what status it contains
 					if strings.HasPrefix(statusText, "●") { // online
 						return successStyle
 					} else if strings.HasPrefix(statusText, "○") { // stopped
-						return mutedStyle
+						return warningStyle // Orange for stopped
 					} else if strings.HasPrefix(statusText, "✗") { // errored
 						return errorStyle
 					} else if strings.HasPrefix(statusText, "↻") { // restarting
 						return warningStyle
 					}
-					return lipgloss.NewStyle()
+					return mutedStyle
 				}
 
 				// CPU column - color by usage
@@ -149,13 +149,18 @@ var listCmd = &cobra.Command{
 					return lipgloss.NewStyle().Foreground(colorWarning)
 				}
 
-				// Script column (last column) - muted
+				// Uptime column - muted
+				if col == 6 {
+					return mutedStyle
+				}
+
+				// Script column - muted
 				if col == 7 {
 					return mutedStyle
 				}
 
-				// Default style
-				return lipgloss.NewStyle()
+				// Default
+				return mutedStyle
 			}).
 			Headers("ID", "NAME", "STATUS", "↺", "CPU", "MEMORY", "UPTIME", "SCRIPT").
 			Rows(rows...)

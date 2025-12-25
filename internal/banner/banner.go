@@ -5,11 +5,12 @@ import (
 )
 
 const asciiArt = `
-    ____  _________  _  __
-   / __ \/ ___/ __ \| |/ /
-  / /_/ / /  / /_/ />  <
- / ____/ /___\____/_/|_|
-/_/    \____/
+██████╗ ██████╗  ██████╗ ██╗  ██╗
+██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝
+██████╔╝██████╔╝██║   ██║ ╚███╔╝
+██╔═══╝ ██╔══██╗██║   ██║ ██╔██╗
+██║     ██║  ██║╚██████╔╝██╔╝ ██╗
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
 `
 
 const tagline = "Process Manager for Modern Development"
@@ -60,7 +61,7 @@ func Render() string {
 	return lipgloss.JoinVertical(
 		lipgloss.Left,
 		divider,
-		logo,
+		"                   "+logo, // Center the logo
 		"",
 		"                    "+tag,
 		desc,
@@ -85,9 +86,9 @@ func RenderCompact() string {
 
 	return lipgloss.JoinVertical(
 		lipgloss.Left,
-		logo,
+		"                   "+logo, // Center the logo
 		"",
-		"  "+tag,
+		"                    "+tag,
 		"",
 	)
 }

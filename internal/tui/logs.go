@@ -2,6 +2,8 @@ package tui
 
 import (
 	"fmt"
+	"os"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -28,6 +30,9 @@ type LogsModel struct {
 	followMode    bool
 	loading       bool
 	err           error
+	writingToFile bool      // Toggle state for continuous writing
+	logFile       *os.File  // Handle to open log file
+	logFilePath   string    // Path to the log file being written
 }
 
 // NewLogsModel creates a new logs view model
@@ -46,6 +51,9 @@ func NewLogsModel(manager *process.Manager, storage *storage.Storage, processNam
 		followMode:    true,
 		loading:       true,
 		err:           nil,
+		writingToFile: false,
+		logFile:       nil,
+		logFilePath:   "",
 	}
 }
 
@@ -102,6 +110,43 @@ func (m LogsModel) Update(msg tea.Msg) (LogsModel, tea.Cmd) {
 			m.totalLogsSeen = 0
 			m.loading = true
 			return m, loadLogsCmd(m.storage, m.processName, 100)
+
+		case "w":
+			// Toggle continuous writing mode
+			if m.writingToFile {
+				// Turn OFF writing
+				if m.logFile != nil {
+					m.logFile.Close()
+					m.logFile = nil
+				}
+				m.writingToFile = false
+			} else {
+				// Turn ON writing - create new file
+				timestamp := time.Now().Format("2006-01-02_15-04-05")
+				filename := fmt.Sprintf("%s_logs_%s.txt", m.processName, timestamp)
+				filepath := filepath.Join(".", filename)
+
+				file, err := os.Create(filepath)
+				if err != nil {
+					m.err = fmt.Errorf("failed to create log file: %w", err)
+					return m, nil
+				}
+
+				// Write header
+				file.WriteString(fmt.Sprintf("# Logs for process: %s\n", m.processName))
+				file.WriteString(fmt.Sprintf("# Started: %s\n", time.Now().Format(time.RFC3339)))
+				file.WriteString(fmt.Sprintf("# Continuous write mode - logs will be appended in real-time\n\n"))
+
+				// Write existing entries
+				for _, entry := range m.entries {
+					writeLogEntry(file, entry)
+				}
+
+				m.logFile = file
+				m.logFilePath = filepath
+				m.writingToFile = true
+			}
+			return m, nil
 		}
 
 	case tea.WindowSizeMsg:
@@ -127,6 +172,13 @@ func (m LogsModel) Update(msg tea.Msg) (LogsModel, tea.Cmd) {
 				// Incremental update
 				m.entries = append(m.entries, msg...)
 				m.totalLogsSeen += len(msg)
+
+				// If writing to file, append new entries
+				if m.writingToFile && m.logFile != nil {
+					for _, entry := range msg {
+						writeLogEntry(m.logFile, entry)
+					}
+				}
 
 				// Cap at max lines
 				if len(m.entries) > maxLogLines {
@@ -263,7 +315,16 @@ Press 'esc' or 'q' to go back.`, m.processName)
 			Render("OFF")
 	}
 
-	footer := fmt.Sprintf("↑/k up  ↓/j down  g top  G bottom  f follow[%s]  r refresh  esc exit", followStatus)
+	// Write status indicator
+	writeIndicator := "w write"
+	if m.writingToFile {
+		writeIndicator = lipgloss.NewStyle().
+			Foreground(lipgloss.Color("#FFD700")). // Gold color
+			Bold(true).
+			Render("w WRITING")
+	}
+
+	footer := fmt.Sprintf("↑/k up  ↓/j down  g top  G bottom  f follow[%s]  r refresh  %s  esc exit", followStatus, writeIndicator)
 
 	// Box the footer
 	footerBox := lipgloss.NewStyle().
@@ -353,4 +414,53 @@ func tailLogsCmd(storage *storage.Storage, processName string, currentLineCount 
 
 		return logTickMsg(t)
 	})
+}
+
+// writeLogEntry writes a single log entry to the file
+func writeLogEntry(file *os.File, entry logs.LogEntry) {
+	if file == nil {
+		return
+	}
+
+	source := "OUT"
+	if entry.Source == logs.LogSourceStderr {
+		source = "ERR"
+	}
+	line := fmt.Sprintf("[%s] [%s] %s\n",
+		entry.Timestamp.Format("2006-01-02 15:04:05"),
+		source,
+		entry.Content)
+	file.WriteString(line)
+}
+
+// writeLogsToFile writes the current log entries to a file (one-time snapshot)
+// Used by monitor view for quick export
+func writeLogsToFile(processName string, entries []logs.LogEntry) tea.Cmd {
+	return func() tea.Msg {
+		// Create filename with timestamp
+		timestamp := time.Now().Format("2006-01-02_15-04-05")
+		filename := fmt.Sprintf("%s_logs_%s.txt", processName, timestamp)
+
+		// Write to current directory
+		filepath := filepath.Join(".", filename)
+
+		file, err := os.Create(filepath)
+		if err != nil {
+			return logErrorMsg(fmt.Errorf("failed to create log file: %w", err))
+		}
+		defer file.Close()
+
+		// Write header
+		file.WriteString(fmt.Sprintf("# Logs for process: %s\n", processName))
+		file.WriteString(fmt.Sprintf("# Exported: %s\n", time.Now().Format(time.RFC3339)))
+		file.WriteString(fmt.Sprintf("# Total entries: %d\n\n", len(entries)))
+
+		// Write each log entry
+		for _, entry := range entries {
+			writeLogEntry(file, entry)
+		}
+
+		// Return a success message (we'll handle this as a no-op for now)
+		return nil
+	}
 }

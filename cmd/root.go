@@ -6,12 +6,14 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/craigderington/prox/internal/tui"
+	"github.com/craigderington/prox/internal/version"
 	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "prox",
-	Short: "⚡ Process manager TUI",
+	Use:     "prox",
+	Short:   "⚡ Process manager TUI",
+	Version: version.Version,
 	Long: `                        -------------
 
                    ██████╗ ██████╗  ██████╗ ██╗  ██╗

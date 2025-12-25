@@ -202,7 +202,7 @@ func renderProcessTable(processes []*process.Process) {
 				if strings.HasPrefix(statusText, "●") {
 					return successStyle
 				} else if strings.HasPrefix(statusText, "○") {
-					return mutedStyle
+					return warningStyle // Orange for stopped
 				} else if strings.HasPrefix(statusText, "✗") {
 					return errorStyle
 				} else if strings.HasPrefix(statusText, "↻") {
