@@ -259,8 +259,6 @@ prox list
 
 ## 🛠️ Development
 
-See [CLAUDE.md](./CLAUDE.md) for detailed development documentation.
-
 ### Build & Test
 
 ```bash
