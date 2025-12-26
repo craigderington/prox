@@ -288,8 +288,37 @@ func (m *Manager) stopProcess(proc *Process) error {
 		return fmt.Errorf("process '%s' is already stopped", proc.Name)
 	}
 
+	// Handle case where we reconnected to a process (cmd is nil but PID exists)
 	if proc.cmd == nil || proc.cmd.Process == nil {
+		if proc.PID > 0 && processExists(proc.PID) {
+			// We have a PID but no cmd - this happens when reconnecting to a process
+			// Kill the process group directly
+			if err := syscall.Kill(-proc.PID, syscall.SIGTERM); err != nil {
+				// Fallback to killing just the process
+				if err := syscall.Kill(proc.PID, syscall.SIGTERM); err != nil {
+					return fmt.Errorf("failed to send SIGTERM to PID %d: %w", proc.PID, err)
+				}
+			}
+
+			// Wait for process to exit (up to 5 seconds)
+			for i := 0; i < 50; i++ {
+				if !processExists(proc.PID) {
+					break
+				}
+				time.Sleep(100 * time.Millisecond)
+			}
+
+			// Force kill if still running
+			if processExists(proc.PID) {
+				syscall.Kill(-proc.PID, syscall.SIGKILL)
+				syscall.Kill(proc.PID, syscall.SIGKILL) // Fallback
+				time.Sleep(500 * time.Millisecond)
+			}
+		}
+
 		proc.Status = StatusStopped
+		now := time.Now()
+		proc.StoppedAt = &now
 		return nil
 	}
 
@@ -302,8 +331,14 @@ func (m *Manager) stopProcess(proc *Process) error {
 	close(proc.logStopCh)
 
 	// Try graceful shutdown with SIGTERM
-	if err := proc.cmd.Process.Signal(syscall.SIGTERM); err != nil {
-		return fmt.Errorf("failed to send SIGTERM: %w", err)
+	// Use negative PID to signal the entire process group (since we used Setpgid: true)
+	// This ensures child processes also receive the signal and release resources like ports
+	pgid := proc.PID
+	if err := syscall.Kill(-pgid, syscall.SIGTERM); err != nil {
+		// Fallback to signaling just the parent process if process group signal fails
+		if err := proc.cmd.Process.Signal(syscall.SIGTERM); err != nil {
+			return fmt.Errorf("failed to send SIGTERM: %w", err)
+		}
 	}
 
 	// Wait for graceful shutdown (5 seconds)
@@ -314,9 +349,12 @@ func (m *Manager) stopProcess(proc *Process) error {
 
 	select {
 	case <-time.After(5 * time.Second):
-		// Force kill after timeout
-		if err := proc.cmd.Process.Kill(); err != nil {
-			return fmt.Errorf("failed to kill process: %w", err)
+		// Force kill after timeout - signal entire process group
+		if err := syscall.Kill(-pgid, syscall.SIGKILL); err != nil {
+			// Fallback to killing just the parent if process group kill fails
+			if err := proc.cmd.Process.Kill(); err != nil {
+				return fmt.Errorf("failed to kill process: %w", err)
+			}
 		}
 		<-done // Wait for Wait() to finish
 	case <-done:
