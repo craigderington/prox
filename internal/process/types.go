@@ -18,7 +18,7 @@ const (
 	StatusStopping   ProcessStatus = "stopping"
 )
 
-// Process represents a managed process
+// Process represents a managed process with its configuration and runtime state.
 type Process struct {
 	ID            string        `json:"id"`
 	Name          string        `json:"name"`
@@ -47,15 +47,17 @@ type Process struct {
 	manager *Manager // Reference to manager for auto-restart
 }
 
-// ProcessMetrics holds real-time metrics for a process
+// ProcessMetrics holds real-time metrics for a process.
+// Note: NetSent and NetRecv represent system-wide network metrics,
+// not per-process metrics (which are difficult to obtain accurately).
 type ProcessMetrics struct {
 	PID           int
 	CPU           float64
 	Memory        uint64 // bytes
 	MemoryPercent float64
 	Uptime        time.Duration
-	NetSent       uint64 // bytes sent
-	NetRecv       uint64 // bytes received
+	NetSent       uint64 // system-wide bytes sent (network accounting per-process is complex)
+	NetRecv       uint64 // system-wide bytes received (network accounting per-process is complex)
 }
 
 // RestartPolicy defines how a process should be restarted
@@ -67,7 +69,8 @@ const (
 	RestartNever     RestartPolicy = "never"
 )
 
-// ProcessConfig is the configuration for starting a process
+// ProcessConfig is the configuration for starting a process.
+// It defines how a process should be executed and managed.
 type ProcessConfig struct {
 	Name        string            `json:"name"`
 	Script      string            `json:"script"`

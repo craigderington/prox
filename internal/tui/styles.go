@@ -12,19 +12,11 @@ var (
 	colorDanger  = lipgloss.Color("#FF5F87") // Red
 	colorMuted   = lipgloss.Color("#6C7086") // Gray
 	colorBorder  = lipgloss.Color("#45475A") // Dark gray
-	colorBg      = lipgloss.Color("#1E1E2E") // Dark background
 	colorText    = lipgloss.Color("#CDD6F4") // Light text
 
 	// Title style
 	titleStyle = lipgloss.NewStyle().
 			Foreground(colorPrimary).
-			Bold(true).
-			Padding(0, 1)
-
-	// Header style
-	headerStyle = lipgloss.NewStyle().
-			Foreground(colorText).
-			Background(colorBorder).
 			Bold(true).
 			Padding(0, 1)
 
@@ -58,33 +50,6 @@ var (
 	tableCellStyle = lipgloss.NewStyle().
 			Foreground(colorText).
 			Padding(0, 1)
-
-	tableSelectedStyle = lipgloss.NewStyle().
-				Foreground(colorText).
-				Padding(0, 1)
-
-	// Help/footer style
-	helpStyle = lipgloss.NewStyle().
-			Foreground(colorMuted).
-			Padding(1, 2)
-
-	// Border style
-	borderStyle = lipgloss.NewStyle().
-			BorderStyle(lipgloss.RoundedBorder()).
-			BorderForeground(colorBorder).
-			Padding(1, 2)
-
-	// Stats style
-	statsStyle = lipgloss.NewStyle().
-			Foreground(colorText).
-			Padding(0, 2)
-
-	statsLabelStyle = lipgloss.NewStyle().
-			Foreground(colorMuted)
-
-	statsValueStyle = lipgloss.NewStyle().
-			Foreground(colorPrimary).
-			Bold(true)
 )
 
 // GetStatusStyle returns the style for a given status

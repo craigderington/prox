@@ -178,18 +178,6 @@ var startAllCmd = &cobra.Command{
 	},
 }
 
-// parseCommand parses a command string into script and args
-func parseCommand(command string) (string, []string) {
-	parts := strings.Fields(command)
-	if len(parts) == 0 {
-		return "", nil
-	}
-	if len(parts) == 1 {
-		return parts[0], nil
-	}
-	return parts[0], parts[1:]
-}
-
 func init() {
 	rootCmd.AddCommand(startAllCmd)
 }

@@ -1,0 +1,11 @@
+services:
+    web:
+        command: python ../../test_app.py
+        cwd: examples/simple-app
+        instances: 1
+        restart: on-failure
+    worker:
+        command: python ../../cpu_test.py
+        cwd: examples/simple-app
+        instances: 1
+        restart: on-failure

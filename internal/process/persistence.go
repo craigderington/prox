@@ -63,14 +63,36 @@ func (m *Manager) SaveState(storage *storage.Storage) error {
 
 // LoadState loads the manager state from disk
 func (m *Manager) LoadState(storage *storage.Storage) error {
-	var state ManagerState
-	if err := storage.LoadState(&state); err != nil {
+	var rawState map[string]interface{}
+	if err := storage.LoadState(&rawState); err != nil {
 		return err
 	}
 
 	m.mu.Lock()
 	defer m.mu.Unlock()
 
+	// Try to parse as new format first
+	var state ManagerState
+	if processes, ok := rawState["processes"].([]interface{}); ok && len(processes) > 0 {
+		// Check if it's an array of objects (new format) or strings (old format)
+		if _, ok := processes[0].(map[string]interface{}); ok {
+			// New format - try to decode as ManagerState
+			if err := storage.LoadState(&state); err != nil {
+				return fmt.Errorf("failed to decode state as new format: %w", err)
+			}
+		} else if _, ok := processes[0].(string); ok {
+			// Old format - array of process names
+			fmt.Printf("[prox] Detected old state format, starting fresh\n")
+			return nil // Start with empty state
+		} else {
+			return fmt.Errorf("unrecognized processes format in state file")
+		}
+	} else {
+		// No processes in state, that's fine
+		return nil
+	}
+
+	// Process the loaded state
 	for _, procState := range state.Processes {
 		proc := &Process{
 			ID:          procState.ID,

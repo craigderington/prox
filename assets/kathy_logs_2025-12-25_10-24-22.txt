@@ -1,0 +1,1022 @@
+# Logs for process: kathy
+# Started: 2025-12-25T10:24:22-05:00
+# Continuous write mode - logs will be appended in real-time
+
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:04 - ChattyApp - INFO - File uploaded: document_41326.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:05 - ChattyApp - INFO - HTTP GET /api/users/40615 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:05 - ChattyApp - DEBUG - Redis GET: session:user:103
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:05 - ChattyApp - INFO - Session created for user_41327
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:06 - ChattyApp - INFO - HTTP GET /api/users/40616 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:06 - ChattyApp - INFO - Session created for user_104
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:06 - ChattyApp - INFO - Processing user request #41328
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:07 - ChattyApp - INFO - File uploaded: document_40617.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:07 - ChattyApp - INFO - Websocket connection established for user_41329
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:08 - ChattyApp - INFO - Processing user request #40618
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:08 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:09 - ChattyApp - INFO - Cache hit for key: user_40619
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:09 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:10 - ChattyApp - ERROR - Authentication failed for user_40620
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:10 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:11 - ChattyApp - WARNING - Cache miss for key: session_40679
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:11 - ChattyApp - DEBUG - Worker thread 41333 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:12 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:12 - ChattyApp - INFO - File uploaded: document_41334.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:13 - ChattyApp - DEBUG - Worker thread 40623 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:13 - ChattyApp - INFO - HTTP GET /api/users/41335 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:14 - ChattyApp - INFO - Websocket connection established for user_40624
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:14 - ChattyApp - INFO - HTTP GET /api/users/41336 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:15 - ChattyApp - INFO - Database query completed in 40625.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:15 - ChattyApp - INFO - File uploaded: document_41337.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:16 - ChattyApp - INFO - Session created for user_40626
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:16 - ChattyApp - INFO - Database query completed in 41338.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:17 - ChattyApp - INFO - File uploaded: document_40627.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:17 - ChattyApp - INFO - Cache hit for key: user_41339
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:18 - ChattyApp - INFO - Websocket connection established for user_40628
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:18 - ChattyApp - ERROR - Authentication failed for user_41340
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:19 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:19 - ChattyApp - WARNING - Retry attempt 41406 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:20 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:20 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:21 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40652
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:21 - ChattyApp - DEBUG - Worker thread 41343 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:22 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40669
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:22 - ChattyApp - INFO - HTTP GET /api/users/41344 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:23 - ChattyApp - DEBUG - Worker thread 40633 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:23 - ChattyApp - INFO - Processing user request #41345
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:24 - ChattyApp - INFO - Database query completed in 40634.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:24 - ChattyApp - INFO - Websocket connection established for user_41346
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:25 - ChattyApp - INFO - Websocket connection established for user_40635
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:25 - ChattyApp - INFO - Cache hit for key: user_41347
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:26 - ChattyApp - INFO - Session created for user_40636
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:26 - ChattyApp - INFO - File uploaded: document_41348.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:27 - ChattyApp - INFO - File uploaded: document_40637.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:27 - ChattyApp - INFO - Database query completed in 41349.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:28 - ChattyApp - INFO - Processing user request #40638
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:28 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:28 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41350
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:29 - ChattyApp - INFO - Websocket connection established for user_40639
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:29 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41362
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:30 - ChattyApp - ERROR - Queue processing failed: Message ID 40640
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:30 - ChattyApp - WARNING - Retry attempt 41444 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:31 - ChattyApp - WARNING - Retry attempt 40648 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:31 - ChattyApp - DEBUG - Redis GET: session:user:41353
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:32 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40651
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:32 - ChattyApp - INFO - HTTP GET /api/users/41354 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:33 - ChattyApp - DEBUG - Worker thread 40643 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:33 - ChattyApp - INFO - Database query completed in 41355.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:34 - ChattyApp - INFO - Cache hit for key: user_40644
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:34 - ChattyApp - INFO - Processing user request #41356
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:35 - ChattyApp - INFO - File uploaded: document_40645.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:35 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:36 - ChattyApp - INFO - Cache hit for key: user_40646
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:36 - ChattyApp - INFO - Database query completed in 41358.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:37 - ChattyApp - INFO - Websocket connection established for user_40647
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:37 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:38 - ChattyApp - INFO - File uploaded: document_40648.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:38 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:39 - ChattyApp - INFO - Cache hit for key: user_40649
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:39 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41428
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:40 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:40 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40650
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:40 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41438
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:41 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40720
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:41 - ChattyApp - DEBUG - Worker thread 41363 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:42 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40679
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:42 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:43 - ChattyApp - DEBUG - Redis GET: session:user:40653
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:43 - ChattyApp - INFO - Websocket connection established for user_41365
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:44 - ChattyApp - INFO - Database query completed in 40654.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:44 - ChattyApp - INFO - Database query completed in 41366.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:45 - ChattyApp - INFO - Processing user request #40655
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:45 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:46 - ChattyApp - INFO - Websocket connection established for user_40656
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:46 - ChattyApp - INFO - HTTP GET /api/users/41368 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:47 - ChattyApp - INFO - HTTP GET /api/users/40657 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:47 - ChattyApp - INFO - Websocket connection established for user_41369
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:48 - ChattyApp - INFO - Session created for user_40658
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:48 - ChattyApp - ERROR - File not found: /tmp/upload_41370.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:49 - ChattyApp - INFO - Cache hit for key: user_40659
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:49 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:50 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:50 - ChattyApp - WARNING - Cache miss for key: session_41398
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:51 - ChattyApp - WARNING - Cache miss for key: session_40682
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:51 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:52 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:52 - ChattyApp - INFO - File uploaded: document_41374.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:53 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:53 - ChattyApp - INFO - Session created for user_41375
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:54 - ChattyApp - INFO - Processing user request #40664
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:54 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:55 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:55 - ChattyApp - INFO - Cache hit for key: user_41377
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:56 - ChattyApp - INFO - Websocket connection established for user_40666
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:56 - ChattyApp - INFO - HTTP GET /api/users/41378 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:57 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:57 - ChattyApp - INFO - File uploaded: document_41379.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:58 - ChattyApp - INFO - Websocket connection established for user_40668
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:58 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:59 - ChattyApp - INFO - Session created for user_40669
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:17:59 - ChattyApp - WARNING - Retry attempt 41411 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:00 - ChattyApp - ERROR - Authentication failed for user_40670
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:00 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:01 - ChattyApp - WARNING - Retry attempt 40673 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:01 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:02 - ChattyApp - WARNING - Retry attempt 40689 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:02 - ChattyApp - INFO - Session created for user_41384
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:03 - ChattyApp - DEBUG - Cache stats: 40673 hits, 40674 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:03 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:04 - ChattyApp - INFO - Cache hit for key: user_40674
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:04 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:05 - ChattyApp - INFO - Database query completed in 40675.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:05 - ChattyApp - INFO - HTTP GET /api/users/41387 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:06 - ChattyApp - INFO - HTTP GET /api/users/40676 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:06 - ChattyApp - INFO - Session created for user_41388
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:07 - ChattyApp - INFO - Websocket connection established for user_40677
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:07 - ChattyApp - INFO - Session created for user_41389
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:08 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:08 - ChattyApp - ERROR - Authentication failed for user_41390
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:09 - ChattyApp - INFO - Websocket connection established for user_40679
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:09 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:10 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:10 - ChattyApp - WARNING - Retry attempt 41426 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:11 - ChattyApp - WARNING - Retry attempt 40689 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:11 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:12 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:12 - ChattyApp - INFO - Processing user request #41394
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:13 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40683
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:13 - ChattyApp - INFO - Session created for user_41395
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:14 - ChattyApp - INFO - Database query completed in 40684.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:14 - ChattyApp - INFO - Session created for user_41396
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:15 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:15 - ChattyApp - INFO - Session created for user_41397
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:16 - ChattyApp - INFO - Websocket connection established for user_40686
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:16 - ChattyApp - INFO - Processing user request #41398
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:17 - ChattyApp - INFO - Database query completed in 40687.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:17 - ChattyApp - INFO - File uploaded: document_41399.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:18 - ChattyApp - INFO - Websocket connection established for user_40688
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:18 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:18 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41400
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:19 - ChattyApp - INFO - Database query completed in 40689.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:19 - ChattyApp - WARNING - Cache miss for key: session_41500
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:20 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:20 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:21 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:21 - ChattyApp - DEBUG - Cache stats: 41403 hits, 41404 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:22 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:22 - ChattyApp - INFO - Websocket connection established for user_41404
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:23 - ChattyApp - DEBUG - Redis GET: session:user:40693
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:23 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:24 - ChattyApp - INFO - Cache hit for key: user_40694
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:24 - ChattyApp - INFO - Processing user request #41406
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:25 - ChattyApp - INFO - Session created for user_40695
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:25 - ChattyApp - INFO - Cache hit for key: user_41407
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:26 - ChattyApp - INFO - Cache hit for key: user_40696
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:26 - ChattyApp - INFO - File uploaded: document_41408.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:27 - ChattyApp - INFO - File uploaded: document_40697.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:27 - ChattyApp - INFO - File uploaded: document_41409.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:28 - ChattyApp - INFO - Session created for user_40698
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:28 - ChattyApp - ERROR - File not found: /tmp/upload_41410.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:29 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:29 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:30 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:30 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40700
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:30 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:31 - ChattyApp - WARNING - Cache miss for key: session_40752
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:31 - ChattyApp - DEBUG - Worker thread 41413 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:32 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:32 - ChattyApp - INFO - Cache hit for key: user_41414
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:33 - ChattyApp - DEBUG - Worker thread 40703 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:33 - ChattyApp - INFO - Cache hit for key: user_41415
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:34 - ChattyApp - INFO - File uploaded: document_40704.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:34 - ChattyApp - INFO - File uploaded: document_41416.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:35 - ChattyApp - INFO - File uploaded: document_40705.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:35 - ChattyApp - INFO - Processing user request #41417
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:36 - ChattyApp - INFO - Session created for user_40706
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:36 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:37 - ChattyApp - INFO - Database query completed in 40707.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:37 - ChattyApp - INFO - Database query completed in 41419.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:38 - ChattyApp - INFO - HTTP GET /api/users/40708 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:38 - ChattyApp - ERROR - Queue processing failed: Message ID 41420
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:39 - ChattyApp - INFO - File uploaded: document_40709.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:39 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:40 - ChattyApp - ERROR - Authentication failed for user_40710
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:40 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:41 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:41 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41423
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:42 - ChattyApp - WARNING - Retry attempt 40768 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:42 - ChattyApp - INFO - Cache hit for key: user_41424
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:43 - ChattyApp - DEBUG - Cache stats: 40713 hits, 40714 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:43 - ChattyApp - INFO - File uploaded: document_41425.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:44 - ChattyApp - INFO - Processing user request #40714
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:44 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:45 - ChattyApp - INFO - Session created for user_40715
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:45 - ChattyApp - INFO - File uploaded: document_41427.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:46 - ChattyApp - INFO - Database query completed in 40716.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:46 - ChattyApp - INFO - Websocket connection established for user_41428
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:47 - ChattyApp - INFO - Database query completed in 40717.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:47 - ChattyApp - INFO - Processing user request #41429
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:48 - ChattyApp - INFO - Database query completed in 40718.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:48 - ChattyApp - ERROR - Queue processing failed: Message ID 41430
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:49 - ChattyApp - INFO - Session created for user_40719
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:49 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:50 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:50 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:51 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:51 - ChattyApp - DEBUG - Worker thread 41433 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:52 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:52 - ChattyApp - INFO - Websocket connection established for user_41434
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:53 - ChattyApp - DEBUG - Cache stats: 40723 hits, 40724 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:53 - ChattyApp - INFO - File uploaded: document_41435.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:54 - ChattyApp - INFO - HTTP GET /api/users/40724 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:54 - ChattyApp - INFO - Cache hit for key: user_41436
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:55 - ChattyApp - INFO - Session created for user_40725
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:55 - ChattyApp - INFO - Cache hit for key: user_41437
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:56 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:56 - ChattyApp - INFO - Processing user request #41438
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:57 - ChattyApp - INFO - Session created for user_40727
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:57 - ChattyApp - INFO - Database query completed in 41439.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:58 - ChattyApp - INFO - Session created for user_40728
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:58 - ChattyApp - ERROR - File not found: /tmp/upload_41440.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:59 - ChattyApp - INFO - Session created for user_40729
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:18:59 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:00 - ChattyApp - ERROR - Queue processing failed: Message ID 40730
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:00 - ChattyApp - WARNING - Cache miss for key: session_41526
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:01 - ChattyApp - WARNING - Retry attempt 40770 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:01 - ChattyApp - DEBUG - Cache stats: 41443 hits, 41444 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:02 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:02 - ChattyApp - INFO - Websocket connection established for user_41444
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:03 - ChattyApp - DEBUG - Worker thread 40733 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:03 - ChattyApp - INFO - Cache hit for key: user_41445
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:04 - ChattyApp - INFO - Session created for user_40734
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:04 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:05 - ChattyApp - INFO - Cache hit for key: user_40735
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:05 - ChattyApp - INFO - Database query completed in 41447.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:06 - ChattyApp - INFO - HTTP GET /api/users/40736 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:06 - ChattyApp - INFO - Cache hit for key: user_41448
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:07 - ChattyApp - INFO - Processing user request #40737
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:07 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:08 - ChattyApp - INFO - File uploaded: document_40738.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:08 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:08 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41450
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:09 - ChattyApp - INFO - Database query completed in 40739.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:09 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41516
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:10 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:10 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:11 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:11 - ChattyApp - DEBUG - Worker thread 41453 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:12 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:12 - ChattyApp - INFO - File uploaded: document_41454.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:13 - ChattyApp - DEBUG - Worker thread 40743 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:13 - ChattyApp - INFO - Cache hit for key: user_41455
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:14 - ChattyApp - INFO - Websocket connection established for user_40744
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:14 - ChattyApp - INFO - Processing user request #41456
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:15 - ChattyApp - INFO - Session created for user_40745
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:15 - ChattyApp - INFO - Cache hit for key: user_41457
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:16 - ChattyApp - INFO - Websocket connection established for user_40746
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:16 - ChattyApp - INFO - Websocket connection established for user_41458
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:17 - ChattyApp - INFO - Database query completed in 40747.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:17 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:18 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:18 - ChattyApp - ERROR - File not found: /tmp/upload_41460.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:19 - ChattyApp - INFO - Cache hit for key: user_40749
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:19 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41556
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:20 - ChattyApp - ERROR - Queue processing failed: Message ID 40750
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:20 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40750
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:20 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:21 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:21 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:22 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:22 - ChattyApp - INFO - File uploaded: document_41464.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:23 - ChattyApp - DEBUG - Worker thread 40753 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:23 - ChattyApp - INFO - Session created for user_41465
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:24 - ChattyApp - INFO - HTTP GET /api/users/40754 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:24 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:25 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:25 - ChattyApp - INFO - Websocket connection established for user_41467
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:26 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:26 - ChattyApp - INFO - Database query completed in 41468.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:27 - ChattyApp - INFO - File uploaded: document_40757.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:27 - ChattyApp - INFO - HTTP GET /api/users/41469 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:28 - ChattyApp - INFO - Database query completed in 40758.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:28 - ChattyApp - ERROR - Authentication failed for user_41470
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:29 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:29 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:30 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:30 - ChattyApp - WARNING - Retry attempt 41524 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:31 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:31 - ChattyApp - DEBUG - Cache stats: 41473 hits, 41474 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:32 - ChattyApp - WARNING - Retry attempt 40768 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:32 - ChattyApp - INFO - File uploaded: document_41474.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:33 - ChattyApp - DEBUG - Cache stats: 40763 hits, 40764 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:33 - ChattyApp - INFO - Database query completed in 41475.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:34 - ChattyApp - INFO - Session created for user_40764
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:34 - ChattyApp - INFO - Processing user request #41476
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:35 - ChattyApp - INFO - File uploaded: document_40765.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:35 - ChattyApp - INFO - Session created for user_41477
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:36 - ChattyApp - INFO - Session created for user_40766
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:36 - ChattyApp - INFO - HTTP GET /api/users/41478 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:37 - ChattyApp - INFO - HTTP GET /api/users/40767 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:37 - ChattyApp - INFO - File uploaded: document_41479.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:38 - ChattyApp - INFO - Processing user request #40768
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:38 - ChattyApp - ERROR - Authentication failed for user_41480
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:39 - ChattyApp - INFO - Websocket connection established for user_40769
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:39 - ChattyApp - WARNING - Cache miss for key: session_41500
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:40 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:40 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:41 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40798
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:41 - ChattyApp - DEBUG - Worker thread 41483 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:42 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:42 - ChattyApp - INFO - Processing user request #41484
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:43 - ChattyApp - DEBUG - Worker thread 40773 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:43 - ChattyApp - INFO - Database query completed in 41485.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:44 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:44 - ChattyApp - INFO - Cache hit for key: user_41486
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:45 - ChattyApp - INFO - File uploaded: document_40775.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:45 - ChattyApp - INFO - File uploaded: document_41487.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:46 - ChattyApp - INFO - File uploaded: document_40776.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:46 - ChattyApp - INFO - Database query completed in 41488.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:47 - ChattyApp - INFO - Database query completed in 40777.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:47 - ChattyApp - INFO - Processing user request #41489
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:48 - ChattyApp - INFO - Processing user request #40778
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:48 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:49 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:49 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41554
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:50 - ChattyApp - ERROR - File not found: /tmp/upload_40780.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:50 - ChattyApp - WARNING - Retry attempt 41574 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:51 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:51 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41493
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:52 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40846
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:52 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:53 - ChattyApp - DEBUG - Cache stats: 40783 hits, 40784 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:53 - ChattyApp - INFO - File uploaded: document_41495.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:54 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:54 - ChattyApp - INFO - Processing user request #41496
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:55 - ChattyApp - INFO - Session created for user_40785
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:55 - ChattyApp - INFO - HTTP GET /api/users/41497 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:56 - ChattyApp - INFO - Websocket connection established for user_40786
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:56 - ChattyApp - INFO - Database query completed in 41498.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:57 - ChattyApp - INFO - HTTP GET /api/users/40787 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:57 - ChattyApp - INFO - File uploaded: document_41499.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:58 - ChattyApp - INFO - HTTP GET /api/users/40788 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:58 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:58 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41500
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:59 - ChattyApp - INFO - Database query completed in 40789.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:19:59 - ChattyApp - WARNING - Retry attempt 41564 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:00 - ChattyApp - ERROR - Authentication failed for user_40790
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:00 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:01 - ChattyApp - WARNING - Cache miss for key: session_40832
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:01 - ChattyApp - DEBUG - Worker thread 41503 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:02 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:02 - ChattyApp - INFO - Cache hit for key: user_41504
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:03 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40793
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:03 - ChattyApp - INFO - Database query completed in 41505.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:04 - ChattyApp - INFO - HTTP GET /api/users/40794 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:04 - ChattyApp - INFO - File uploaded: document_41506.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:05 - ChattyApp - INFO - Processing user request #40795
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:05 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:06 - ChattyApp - INFO - HTTP GET /api/users/40796 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:06 - ChattyApp - INFO - Websocket connection established for user_41508
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:07 - ChattyApp - INFO - Cache hit for key: user_40797
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:07 - ChattyApp - INFO - Database query completed in 41509.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:08 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:08 - ChattyApp - ERROR - Authentication failed for user_41510
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:09 - ChattyApp - INFO - Cache hit for key: user_40799
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:09 - ChattyApp - WARNING - Cache miss for key: session_41573
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:10 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:10 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40800
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:10 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:11 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:11 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41513
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:12 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:12 - ChattyApp - INFO - Session created for user_41514
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:13 - ChattyApp - DEBUG - Worker thread 40803 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:13 - ChattyApp - INFO - HTTP GET /api/users/41515 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:14 - ChattyApp - INFO - Cache hit for key: user_40804
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:14 - ChattyApp - INFO - HTTP GET /api/users/41516 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:15 - ChattyApp - INFO - Database query completed in 40805.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:15 - ChattyApp - INFO - File uploaded: document_41517.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:16 - ChattyApp - INFO - Session created for user_40806
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:16 - ChattyApp - INFO - Session created for user_41518
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:17 - ChattyApp - INFO - Processing user request #40807
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:17 - ChattyApp - INFO - Session created for user_41519
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:18 - ChattyApp - INFO - File uploaded: document_40808.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:18 - ChattyApp - ERROR - File not found: /tmp/upload_41520.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:19 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:19 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:20 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:20 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:21 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:21 - ChattyApp - DEBUG - Worker thread 41523 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:22 - ChattyApp - WARNING - Retry attempt 40834 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:22 - ChattyApp - INFO - Database query completed in 41524.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:23 - ChattyApp - DEBUG - Cache stats: 40813 hits, 40814 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:23 - ChattyApp - INFO - Cache hit for key: user_41525
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:24 - ChattyApp - INFO - Database query completed in 40814.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:24 - ChattyApp - INFO - Websocket connection established for user_41526
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:25 - ChattyApp - INFO - Database query completed in 40815.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:25 - ChattyApp - INFO - Database query completed in 41527.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:26 - ChattyApp - INFO - Session created for user_40816
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:26 - ChattyApp - INFO - HTTP GET /api/users/41528 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:27 - ChattyApp - INFO - Session created for user_40817
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:27 - ChattyApp - INFO - Session created for user_41529
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:28 - ChattyApp - INFO - Database query completed in 40818.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:28 - ChattyApp - ERROR - File not found: /tmp/upload_41530.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:29 - ChattyApp - INFO - Processing user request #40819
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:29 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:30 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:30 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41589
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:31 - ChattyApp - WARNING - Cache miss for key: session_40822
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:31 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41533
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:32 - ChattyApp - WARNING - Cache miss for key: session_40880
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:32 - ChattyApp - INFO - Database query completed in 41534.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:33 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:33 - ChattyApp - INFO - File uploaded: document_41535.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:34 - ChattyApp - INFO - HTTP GET /api/users/40824 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:34 - ChattyApp - INFO - File uploaded: document_41536.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:35 - ChattyApp - INFO - Cache hit for key: user_40825
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:35 - ChattyApp - INFO - File uploaded: document_41537.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:36 - ChattyApp - INFO - File uploaded: document_40826.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:36 - ChattyApp - INFO - File uploaded: document_41538.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:37 - ChattyApp - INFO - Websocket connection established for user_40827
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:37 - ChattyApp - INFO - Processing user request #41539
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:38 - ChattyApp - INFO - Session created for user_40828
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:38 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:39 - ChattyApp - INFO - Database query completed in 40829.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:39 - ChattyApp - WARNING - Cache miss for key: session_41623
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:40 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:40 - ChattyApp - WARNING - Retry attempt 41627 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:41 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:41 - ChattyApp - DEBUG - Worker thread 41543 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:42 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:42 - ChattyApp - INFO - File uploaded: document_41544.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:43 - ChattyApp - DEBUG - Worker thread 40833 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:44 - ChattyApp - INFO - File uploaded: document_41545.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:44 - ChattyApp - INFO - Websocket connection established for user_40834
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:45 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:45 - ChattyApp - INFO - File uploaded: document_40835.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:46 - ChattyApp - INFO - Database query completed in 41547.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:46 - ChattyApp - INFO - Database query completed in 40836.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:47 - ChattyApp - INFO - File uploaded: document_41548.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:47 - ChattyApp - INFO - HTTP GET /api/users/40837 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:48 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:48 - ChattyApp - INFO - Session created for user_40838
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:49 - ChattyApp - ERROR - File not found: /tmp/upload_41550.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:49 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41550
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:49 - ChattyApp - INFO - Cache hit for key: user_40839
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:50 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:50 - ChattyApp - ERROR - Queue processing failed: Message ID 40840
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:51 - ChattyApp - WARNING - Retry attempt 41647 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:51 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:52 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41553
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:52 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:53 - ChattyApp - INFO - Database query completed in 41554.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:53 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:54 - ChattyApp - INFO - File uploaded: document_41555.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:54 - ChattyApp - INFO - Processing user request #40844
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:55 - ChattyApp - INFO - HTTP GET /api/users/41556 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:55 - ChattyApp - INFO - Database query completed in 40845.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:56 - ChattyApp - INFO - File uploaded: document_41557.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:56 - ChattyApp - INFO - Processing user request #40846
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:57 - ChattyApp - INFO - File uploaded: document_41558.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:57 - ChattyApp - INFO - Websocket connection established for user_40847
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:58 - ChattyApp - INFO - Processing user request #41559
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:58 - ChattyApp - INFO - Database query completed in 40848.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:59 - ChattyApp - ERROR - Queue processing failed: Message ID 41560
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:20:59 - ChattyApp - INFO - Websocket connection established for user_40849
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:00 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:00 - ChattyApp - ERROR - File not found: /tmp/upload_40850.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:00 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40850
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:01 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:01 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40929
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:02 - ChattyApp - DEBUG - Redis GET: session:user:41563
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:02 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:03 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:03 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40853
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:04 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:04 - ChattyApp - INFO - Websocket connection established for user_40854
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:05 - ChattyApp - INFO - Processing user request #41566
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:05 - ChattyApp - INFO - Session created for user_40855
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:06 - ChattyApp - INFO - File uploaded: document_41567.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:06 - ChattyApp - INFO - Processing user request #40856
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:07 - ChattyApp - INFO - Session created for user_41568
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:07 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:08 - ChattyApp - INFO - Session created for user_41569
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:08 - ChattyApp - INFO - Session created for user_40858
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:09 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:09 - ChattyApp - INFO - Database query completed in 40859.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:10 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:10 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:11 - ChattyApp - WARNING - Retry attempt 41584 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:11 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40883
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:12 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:12 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:13 - ChattyApp - INFO - Processing user request #41574
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:13 - ChattyApp - DEBUG - Cache stats: 40863 hits, 40864 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:14 - ChattyApp - INFO - HTTP GET /api/users/41575 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:14 - ChattyApp - INFO - Database query completed in 40864.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:15 - ChattyApp - INFO - Cache hit for key: user_41576
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:15 - ChattyApp - INFO - HTTP GET /api/users/40865 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:16 - ChattyApp - INFO - Cache hit for key: user_41577
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:16 - ChattyApp - INFO - File uploaded: document_40866.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:17 - ChattyApp - INFO - Websocket connection established for user_41578
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:17 - ChattyApp - INFO - Cache hit for key: user_40867
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:18 - ChattyApp - INFO - Session created for user_41579
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:18 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:19 - ChattyApp - ERROR - Authentication failed for user_41580
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:19 - ChattyApp - INFO - File uploaded: document_40869.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:20 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:20 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:21 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41583
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:21 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:22 - ChattyApp - DEBUG - Cache stats: 41583 hits, 41584 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:22 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:23 - ChattyApp - INFO - Session created for user_41584
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:23 - ChattyApp - DEBUG - Cache stats: 40873 hits, 40874 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:24 - ChattyApp - INFO - Websocket connection established for user_41585
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:24 - ChattyApp - INFO - Cache hit for key: user_40874
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:25 - ChattyApp - INFO - Websocket connection established for user_41586
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:25 - ChattyApp - INFO - Processing user request #40875
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:26 - ChattyApp - INFO - Processing user request #41587
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:26 - ChattyApp - INFO - Processing user request #40876
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:27 - ChattyApp - INFO - Processing user request #41588
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:27 - ChattyApp - INFO - Websocket connection established for user_40877
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:28 - ChattyApp - INFO - Processing user request #41589
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:28 - ChattyApp - INFO - Cache hit for key: user_40878
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:29 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:29 - ChattyApp - INFO - Processing user request #40879
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:30 - ChattyApp - WARNING - Cache miss for key: session_41664
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:30 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:31 - ChattyApp - WARNING - Retry attempt 41639 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:31 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40932
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:32 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41593
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:32 - ChattyApp - WARNING - Cache miss for key: session_40898
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:33 - ChattyApp - INFO - Processing user request #41594
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:33 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:34 - ChattyApp - INFO - HTTP GET /api/users/41595 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:34 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:35 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:35 - ChattyApp - INFO - Processing user request #40885
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:36 - ChattyApp - INFO - Cache hit for key: user_41597
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:36 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:37 - ChattyApp - INFO - Cache hit for key: user_41598
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:37 - ChattyApp - INFO - HTTP GET /api/users/40887 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:38 - ChattyApp - INFO - File uploaded: document_41599.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:38 - ChattyApp - INFO - Websocket connection established for user_40888
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:39 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:39 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41600
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:39 - ChattyApp - INFO - Websocket connection established for user_40889
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:40 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41641
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:40 - ChattyApp - ERROR - Authentication failed for user_40890
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:41 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:41 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40910
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:42 - ChattyApp - DEBUG - Cache stats: 41603 hits, 41604 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:42 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:43 - ChattyApp - INFO - Processing user request #41604
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:43 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:44 - ChattyApp - INFO - HTTP GET /api/users/41605 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:44 - ChattyApp - INFO - Websocket connection established for user_40894
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:45 - ChattyApp - INFO - Database query completed in 41606.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:45 - ChattyApp - INFO - Websocket connection established for user_40895
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:46 - ChattyApp - INFO - Cache hit for key: user_41607
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:46 - ChattyApp - INFO - Session created for user_40896
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:47 - ChattyApp - INFO - HTTP GET /api/users/41608 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:47 - ChattyApp - INFO - Session created for user_40897
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:48 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:48 - ChattyApp - INFO - Processing user request #40898
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:49 - ChattyApp - ERROR - Authentication failed for user_41610
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:49 - ChattyApp - INFO - Session created for user_40899
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:50 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:50 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:50 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40900
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:51 - ChattyApp - WARNING - Cache miss for key: session_41628
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:51 - ChattyApp - WARNING - Cache miss for key: session_40971
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:52 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:52 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40933
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:53 - ChattyApp - INFO - Websocket connection established for user_41614
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:53 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:54 - ChattyApp - INFO - Processing user request #41615
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:54 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:55 - ChattyApp - INFO - File uploaded: document_41616.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:55 - ChattyApp - INFO - Processing user request #40905
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:56 - ChattyApp - INFO - Websocket connection established for user_41617
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:56 - ChattyApp - INFO - File uploaded: document_40906.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:57 - ChattyApp - INFO - Cache hit for key: user_41618
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:57 - ChattyApp - INFO - Cache hit for key: user_40907
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:58 - ChattyApp - INFO - HTTP GET /api/users/41619 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:58 - ChattyApp - INFO - HTTP GET /api/users/40908 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:59 - ChattyApp - ERROR - File not found: /tmp/upload_41620.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:21:59 - ChattyApp - INFO - Session created for user_40909
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:00 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:00 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:01 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41628
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:01 - ChattyApp - WARNING - Cache miss for key: session_40951
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:02 - ChattyApp - DEBUG - Redis GET: session:user:41623
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:02 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:03 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:03 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40913
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:04 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:04 - ChattyApp - INFO - Session created for user_40914
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:05 - ChattyApp - INFO - Processing user request #41626
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:05 - ChattyApp - INFO - Processing user request #40915
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:06 - ChattyApp - INFO - Cache hit for key: user_41627
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:06 - ChattyApp - INFO - Session created for user_40916
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:07 - ChattyApp - INFO - Cache hit for key: user_41628
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:07 - ChattyApp - INFO - File uploaded: document_40917.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:08 - ChattyApp - INFO - Cache hit for key: user_41629
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:08 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:09 - ChattyApp - ERROR - Queue processing failed: Message ID 41630
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:09 - ChattyApp - INFO - HTTP GET /api/users/40919 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:10 - ChattyApp - WARNING - Retry attempt 41683 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:10 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:11 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:11 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:12 - ChattyApp - DEBUG - Cache stats: 41633 hits, 41634 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:12 - ChattyApp - WARNING - Cache miss for key: session_40997
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:13 - ChattyApp - INFO - Websocket connection established for user_41634
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:13 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40923
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:14 - ChattyApp - INFO - Cache hit for key: user_41635
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:14 - ChattyApp - INFO - Session created for user_40924
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:15 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:15 - ChattyApp - INFO - HTTP GET /api/users/40925 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:16 - ChattyApp - INFO - File uploaded: document_41637.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:16 - ChattyApp - INFO - HTTP GET /api/users/40926 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:17 - ChattyApp - INFO - Processing user request #41638
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:17 - ChattyApp - INFO - Websocket connection established for user_40927
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:18 - ChattyApp - INFO - Processing user request #41639
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:18 - ChattyApp - INFO - Websocket connection established for user_40928
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:19 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:19 - ChattyApp - INFO - Database query completed in 40929.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:20 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41720
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:20 - ChattyApp - ERROR - Queue processing failed: Message ID 40930
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:21 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:21 - ChattyApp - WARNING - Retry attempt 40977 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:22 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:22 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:23 - ChattyApp - INFO - Database query completed in 41644.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:23 - ChattyApp - DEBUG - Cache stats: 40933 hits, 40934 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:24 - ChattyApp - INFO - HTTP GET /api/users/41645 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:24 - ChattyApp - INFO - Processing user request #40934
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:25 - ChattyApp - INFO - Processing user request #41646
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:25 - ChattyApp - INFO - Websocket connection established for user_40935
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:26 - ChattyApp - INFO - HTTP GET /api/users/41647 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:26 - ChattyApp - INFO - Websocket connection established for user_40936
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:27 - ChattyApp - INFO - Database query completed in 41648.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:27 - ChattyApp - INFO - Session created for user_40937
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:28 - ChattyApp - INFO - Database query completed in 41649.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:28 - ChattyApp - INFO - Processing user request #40938
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:29 - ChattyApp - ERROR - Queue processing failed: Message ID 41650
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:29 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41650
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:29 - ChattyApp - INFO - Processing user request #40939
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:30 - ChattyApp - WARNING - Cache miss for key: session_41669
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:30 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:31 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:31 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.40992
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:32 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41653
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:32 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:33 - ChattyApp - INFO - Database query completed in 41654.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:33 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40943
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:34 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:34 - ChattyApp - INFO - Processing user request #40944
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:35 - ChattyApp - INFO - File uploaded: document_41656.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:35 - ChattyApp - INFO - Processing user request #40945
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:36 - ChattyApp - INFO - Session created for user_41657
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:36 - ChattyApp - INFO - Session created for user_40946
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:37 - ChattyApp - INFO - Processing user request #41658
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:37 - ChattyApp - INFO - Database query completed in 40947.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:38 - ChattyApp - INFO - File uploaded: document_41659.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:38 - ChattyApp - INFO - Cache hit for key: user_40948
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:39 - ChattyApp - ERROR - File not found: /tmp/upload_41660.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:39 - ChattyApp - INFO - Database query completed in 40949.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:40 - ChattyApp - WARNING - Cache miss for key: session_41714
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:40 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:40 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #40950
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:41 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:41 - ChattyApp - WARNING - Cache miss for key: session_41046
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:42 - ChattyApp - DEBUG - Redis GET: session:user:41663
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:42 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:43 - ChattyApp - INFO - Cache hit for key: user_41664
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:43 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:44 - ChattyApp - INFO - HTTP GET /api/users/41665 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:44 - ChattyApp - INFO - HTTP GET /api/users/40954 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:45 - ChattyApp - INFO - Session created for user_41666
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:45 - ChattyApp - INFO - File uploaded: document_40955.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:46 - ChattyApp - INFO - Cache hit for key: user_41667
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:46 - ChattyApp - INFO - HTTP GET /api/users/40956 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:47 - ChattyApp - INFO - Processing user request #41668
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:47 - ChattyApp - INFO - Websocket connection established for user_40957
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:48 - ChattyApp - INFO - Session created for user_41669
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:48 - ChattyApp - INFO - File uploaded: document_40958.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:49 - ChattyApp - ERROR - File not found: /tmp/upload_41670.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:49 - ChattyApp - INFO - Processing user request #40959
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:50 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:50 - ChattyApp - ERROR - Queue processing failed: Message ID 40960
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:51 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41672
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:51 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:52 - ChattyApp - DEBUG - Cache stats: 41673 hits, 41674 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:52 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:53 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:53 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 40963
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:54 - ChattyApp - INFO - Websocket connection established for user_41675
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:54 - ChattyApp - INFO - HTTP GET /api/users/40964 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:55 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:55 - ChattyApp - INFO - Websocket connection established for user_40965
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:56 - ChattyApp - INFO - HTTP GET /api/users/41677 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:56 - ChattyApp - INFO - Cache hit for key: user_40966
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:57 - ChattyApp - INFO - HTTP GET /api/users/41678 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:57 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:58 - ChattyApp - INFO - Session created for user_41679
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:58 - ChattyApp - INFO - HTTP GET /api/users/40968 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:59 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:22:59 - ChattyApp - INFO - Session created for user_40969
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:00 - ChattyApp - WARNING - Retry attempt 41729 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:00 - ChattyApp - ERROR - File not found: /tmp/upload_40970.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:01 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:01 - ChattyApp - WARNING - Cache miss for key: session_40992
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:02 - ChattyApp - DEBUG - Worker thread 41683 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:02 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41027
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:03 - ChattyApp - INFO - Session created for user_41684
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:03 - ChattyApp - DEBUG - Redis GET: session:user:40973
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:04 - ChattyApp - INFO - HTTP GET /api/users/41685 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:04 - ChattyApp - INFO - Processing user request #40974
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:05 - ChattyApp - INFO - Session created for user_41686
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:05 - ChattyApp - INFO - Processing user request #40975
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:06 - ChattyApp - INFO - HTTP GET /api/users/41687 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:06 - ChattyApp - INFO - HTTP GET /api/users/40976 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:07 - ChattyApp - INFO - File uploaded: document_41688.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:07 - ChattyApp - INFO - Cache hit for key: user_40977
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:08 - ChattyApp - INFO - Session created for user_41689
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:08 - ChattyApp - INFO - Websocket connection established for user_40978
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:09 - ChattyApp - ERROR - File not found: /tmp/upload_41690.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:09 - ChattyApp - INFO - Websocket connection established for user_40979
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:10 - ChattyApp - WARNING - Retry attempt 41696 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:10 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:11 - ChattyApp - WARNING - Cache miss for key: session_41770
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:11 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41023
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:12 - ChattyApp - DEBUG - Cache stats: 41693 hits, 41694 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:12 - ChattyApp - WARNING - Retry attempt 40994 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:13 - ChattyApp - INFO - Cache hit for key: user_41694
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:13 - ChattyApp - DEBUG - Worker thread 40983 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:14 - ChattyApp - INFO - File uploaded: document_41695.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:14 - ChattyApp - INFO - Websocket connection established for user_40984
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:15 - ChattyApp - INFO - Database query completed in 41696.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:15 - ChattyApp - INFO - Processing user request #40985
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:16 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:16 - ChattyApp - INFO - Websocket connection established for user_40986
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:17 - ChattyApp - INFO - File uploaded: document_41698.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:17 - ChattyApp - INFO - HTTP GET /api/users/40987 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:18 - ChattyApp - INFO - HTTP GET /api/users/41699 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:18 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:19 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:19 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41700
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:19 - ChattyApp - INFO - Processing user request #40989
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:20 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:20 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:21 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:21 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:22 - ChattyApp - DEBUG - Redis GET: session:user:41703
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:22 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:23 - ChattyApp - INFO - File uploaded: document_41704.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:23 - ChattyApp - DEBUG - Redis GET: session:user:40993
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:24 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:24 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:25 - ChattyApp - INFO - File uploaded: document_41706.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:25 - ChattyApp - INFO - HTTP GET /api/users/40995 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:26 - ChattyApp - INFO - Cache hit for key: user_41707
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:26 - ChattyApp - INFO - HTTP GET /api/users/40996 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:27 - ChattyApp - INFO - HTTP GET /api/users/41708 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:27 - ChattyApp - INFO - HTTP GET /api/users/40997 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:28 - ChattyApp - INFO - Websocket connection established for user_41709
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:28 - ChattyApp - INFO - File uploaded: document_40998.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:29 - ChattyApp - ERROR - Authentication failed for user_41710
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:29 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:30 - ChattyApp - WARNING - Cache miss for key: session_41765
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:30 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:30 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41000
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:31 - ChattyApp - WARNING - Retry attempt 41746 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:31 - ChattyApp - WARNING - Retry attempt 41038 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:32 - ChattyApp - DEBUG - Redis GET: session:user:41713
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:32 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41026
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:33 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:33 - ChattyApp - DEBUG - Redis GET: session:user:41003
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:34 - ChattyApp - INFO - Session created for user_41715
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:34 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:35 - ChattyApp - INFO - HTTP GET /api/users/41716 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:35 - ChattyApp - INFO - Processing user request #41005
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:36 - ChattyApp - INFO - Cache hit for key: user_41717
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:36 - ChattyApp - INFO - Processing user request #41006
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:37 - ChattyApp - INFO - Session created for user_41718
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:37 - ChattyApp - INFO - Websocket connection established for user_41007
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:38 - ChattyApp - INFO - Processing user request #41719
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:38 - ChattyApp - INFO - Cache hit for key: user_41008
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:39 - ChattyApp - ERROR - Queue processing failed: Message ID 41720
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:39 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:40 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:40 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:41 - ChattyApp - WARNING - Retry attempt 41809 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:41 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:42 - ChattyApp - DEBUG - Worker thread 41723 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:42 - ChattyApp - WARNING - Retry attempt 41049 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:43 - ChattyApp - INFO - Database query completed in 41724.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:43 - ChattyApp - DEBUG - Worker thread 41013 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:44 - ChattyApp - INFO - Websocket connection established for user_41725
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:44 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:45 - ChattyApp - INFO - Cache hit for key: user_41726
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:45 - ChattyApp - INFO - Database query completed in 41015.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:46 - ChattyApp - INFO - Session created for user_41727
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:46 - ChattyApp - INFO - Cache hit for key: user_41016
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:47 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:47 - ChattyApp - INFO - Cache hit for key: user_41017
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:48 - ChattyApp - INFO - Cache hit for key: user_41729
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:48 - ChattyApp - INFO - Session created for user_41018
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:49 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:49 - ChattyApp - INFO - Websocket connection established for user_41019
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:49 - ChattyApp - INFO - 🚀 Chatty App Started - Generating realistic logs every second...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:49 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:50 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:50 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:50 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.91
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:51 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:51 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:51 - ChattyApp - DEBUG - Cache stats: 3 hits, 4 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:52 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41733
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:52 - ChattyApp - WARNING - Retry attempt 41113 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:52 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:53 - ChattyApp - INFO - Session created for user_41734
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:53 - ChattyApp - DEBUG - Redis GET: session:user:41023
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:53 - ChattyApp - INFO - Session created for user_5
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:54 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:54 - ChattyApp - INFO - Cache hit for key: user_41024
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:54 - ChattyApp - INFO - HTTP GET /api/users/6 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:55 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:55 - ChattyApp - INFO - Session created for user_41025
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:55 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:56 - ChattyApp - INFO - HTTP GET /api/users/41737 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:56 - ChattyApp - INFO - File uploaded: document_41026.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:56 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:57 - ChattyApp - INFO - Session created for user_41738
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:57 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:57 - ChattyApp - INFO - Cache hit for key: user_9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:58 - ChattyApp - INFO - Cache hit for key: user_41739
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:58 - ChattyApp - INFO - Session created for user_41028
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:58 - ChattyApp - ERROR - Failed to connect to database: Connection timeout
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:59 - ChattyApp - ERROR - Queue processing failed: Message ID 41740
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:59 - ChattyApp - INFO - File uploaded: document_41029.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:23:59 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:00 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:00 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:00 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:01 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41791
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:01 - ChattyApp - WARNING - Cache miss for key: session_41072
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:01 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:02 - ChattyApp - DEBUG - Worker thread 41743 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:02 - ChattyApp - WARNING - Deprecated API endpoint called: /v1/users
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:02 - ChattyApp - INFO - Processing user request #14
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:03 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:03 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:03 - ChattyApp - INFO - Websocket connection established for user_15
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:04 - ChattyApp - INFO - Cache hit for key: user_41745
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:04 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:04 - ChattyApp - INFO - Websocket connection established for user_16
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:05 - ChattyApp - INFO - Cache hit for key: user_41746
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:05 - ChattyApp - INFO - Websocket connection established for user_41035
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:05 - ChattyApp - INFO - Database query completed in 17.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:06 - ChattyApp - INFO - Database query completed in 41747.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:06 - ChattyApp - INFO - File uploaded: document_41036.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:06 - ChattyApp - INFO - HTTP GET /api/users/18 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:07 - ChattyApp - INFO - Processing user request #41748
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:07 - ChattyApp - INFO - Database query completed in 41037.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:07 - ChattyApp - INFO - Database query completed in 19.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:08 - ChattyApp - INFO - Websocket connection established for user_41749
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:08 - ChattyApp - INFO - Database query completed in 41038.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:08 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:09 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:09 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41750
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:09 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:09 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:10 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:10 - ChattyApp - ERROR - File not found: /tmp/upload_41040.tmp
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:10 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:11 - ChattyApp - WARNING - High memory usage detected: {:.1f}%
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:11 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41122
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:11 - ChattyApp - DEBUG - Redis GET: session:user:23
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:12 - ChattyApp - DEBUG - Cache stats: 41753 hits, 41754 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:12 - ChattyApp - WARNING - Retry attempt 41092 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:12 - ChattyApp - INFO - Processing user request #24
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:13 - ChattyApp - INFO - Session created for user_41754
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:13 - ChattyApp - DEBUG - Worker thread 41043 processing job
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:13 - ChattyApp - INFO - Database query completed in 25.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:14 - ChattyApp - INFO - Processing user request #41755
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:14 - ChattyApp - INFO - File uploaded: document_41044.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:14 - ChattyApp - INFO - File uploaded: document_26.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:15 - ChattyApp - INFO - HTTP GET /api/users/41756 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:15 - ChattyApp - INFO - Websocket connection established for user_41045
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:15 - ChattyApp - INFO - Database query completed in 27.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:16 - ChattyApp - INFO - File uploaded: document_41757.pdf
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:16 - ChattyApp - INFO - Session created for user_41046
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:16 - ChattyApp - INFO - Session created for user_28
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:17 - ChattyApp - INFO - Websocket connection established for user_41758
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:17 - ChattyApp - INFO - Websocket connection established for user_41047
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:17 - ChattyApp - INFO - Cache hit for key: user_29
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:18 - ChattyApp - INFO - Session created for user_41759
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:18 - ChattyApp - INFO - HTTP GET /api/users/41048 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:18 - ChattyApp - ERROR - Queue processing failed: Message ID 30
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:19 - ChattyApp - ERROR - Invalid JSON in request body
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:19 - ChattyApp - INFO - Session created for user_41049
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:19 - ChattyApp - WARNING - Retry attempt 86 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:20 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41810
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:20 - ChattyApp - ERROR - Exception in request handler: KeyError('user_id')
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:20 - ChattyApp - ERROR - Caught exception during processing:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/chatty_app.py", line 98, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ValueError(f"Simulated error for demonstration #{counter}")
+[0001-01-01 00:00:00] [OUT] ValueError: Simulated error for demonstration #41050
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:20 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.127
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:21 - ChattyApp - WARNING - Rate limit approaching for IP: 192.168.1.41781
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:21 - ChattyApp - WARNING - Retry attempt 41084 for failed operation
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:21 - ChattyApp - DEBUG - Cache stats: 33 hits, 34 misses
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:22 - ChattyApp - DEBUG - SQL: SELECT * FROM users WHERE id = 41763
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:22 - ChattyApp - WARNING - Slow query detected: {:.2f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:22 - ChattyApp - INFO - Session created for user_34
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:23 - ChattyApp - INFO - Websocket connection established for user_41764
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:23 - ChattyApp - DEBUG - Calling external API: https://api.example.com/data
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:23 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:24 - ChattyApp - INFO - Database query completed in 41765.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:24 - ChattyApp - INFO - Database query completed in 41054.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:24 - ChattyApp - INFO - Websocket connection established for user_36
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:25 - ChattyApp - INFO - Database query completed in 41766.00ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:25 - ChattyApp - INFO - Cache hit for key: user_41055
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:25 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:26 - ChattyApp - INFO - Processing user request #41767
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:26 - ChattyApp - INFO - HTTP GET /api/users/41056 - 200 OK
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:26 - ChattyApp - INFO - Background job completed successfully
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:27 - ChattyApp - INFO - Websocket connection established for user_41768
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:27 - ChattyApp - INFO - Processing user request #41057
+[0001-01-01 00:00:00] [OUT] 2025-12-25 10:24:27 - ChattyApp - INFO - Cache hit for key: user_39

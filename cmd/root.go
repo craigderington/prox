@@ -13,7 +13,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:     "prox",
 	Short:   "⚡ Process manager TUI",
-	Version: version.Version,
+	Version: version.GetVersion(),
 	Long: `                        -------------
 
                    ██████╗ ██████╗  ██████╗ ██╗  ██╗

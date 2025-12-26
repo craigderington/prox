@@ -1,0 +1,270 @@
+# Logs for process: web4
+# Started: 2025-12-25T13:02:21-05:00
+# Continuous write mode - logs will be appended in real-time
+
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:28.022Z] User 5135 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:30.308Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:30.309Z] User 6240 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:32.595Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:32.595Z] User 3395 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:34.881Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:34.881Z] User 56 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:37.168Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:37.169Z] User 9896 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:39.455Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:39.455Z] User 3696 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:41.742Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:41.743Z] User 3393 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:44.029Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:44.029Z] User 1524 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:46.316Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:46.316Z] User 6957 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:48.603Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:48.603Z] User 6146 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:50.890Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:50.891Z] User 4042 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:53.178Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:53.178Z] User 4054 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:55.465Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:55.466Z] User 8704 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:57.752Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:57.753Z] User 3766 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:00.039Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:00.040Z] User 7641 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:02.327Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:02.327Z] User 5803 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:04.613Z] Request: GET /users
+[0001-01-01 00:00:00] [OUT]   -> Handling users route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:04.614Z] User 8972 accessed /users - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:06.900Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:06.900Z] User 3375 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:09.188Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:09.188Z] User 4730 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:11.474Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:11.475Z] User 4287 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:13.761Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:13.761Z] User 3122 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:16.048Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:16.048Z] User 5264 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:18.335Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:18.336Z] User 1399 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:20.621Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:20.621Z] User 8703 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:22.909Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:22.909Z] User 75 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:25.195Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:25.196Z] User 8057 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:27.482Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:27.482Z] User 535 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:29.769Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:29.770Z] User 487 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:32.056Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:32.057Z] User 3906 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:34.343Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:34.343Z] User 5564 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:36.630Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:36.630Z] User 7595 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:38.916Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:38.916Z] User 6647 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:41.203Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:41.204Z] User 9961 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:43.490Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:43.490Z] User 4687 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:34.881Z] User 56 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:37.168Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:37.169Z] User 9896 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:39.455Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:39.455Z] User 3696 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:41.742Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:41.743Z] User 3393 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:44.029Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:44.029Z] User 1524 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:46.316Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:46.316Z] User 6957 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:48.603Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:48.603Z] User 6146 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:50.890Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:50.891Z] User 4042 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:53.178Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:53.178Z] User 4054 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:55.465Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:55.466Z] User 8704 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:57.752Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:00:57.753Z] User 3766 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:00.039Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:00.040Z] User 7641 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:02.327Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:02.327Z] User 5803 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:04.613Z] Request: GET /users
+[0001-01-01 00:00:00] [OUT]   -> Handling users route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:04.614Z] User 8972 accessed /users - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:06.900Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:06.900Z] User 3375 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:09.188Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:09.188Z] User 4730 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:11.474Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:11.475Z] User 4287 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:13.761Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:13.761Z] User 3122 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:16.048Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:16.048Z] User 5264 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:18.335Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:18.336Z] User 1399 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:20.621Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:20.621Z] User 8703 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:22.909Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:22.909Z] User 75 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:25.195Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:25.196Z] User 8057 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:27.482Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:27.482Z] User 535 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:29.769Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:29.770Z] User 487 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:32.056Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:32.057Z] User 3906 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:34.343Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:34.343Z] User 5564 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:36.630Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:36.630Z] User 7595 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:38.916Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:38.916Z] User 6647 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:41.203Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:41.204Z] User 9961 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:43.490Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:43.490Z] User 4687 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:45.778Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:45.778Z] User 712 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:48.064Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:48.064Z] User 815 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:50.351Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:50.351Z] User 3426 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:52.638Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:52.639Z] User 8552 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:54.925Z] Request: GET /register
+[0001-01-01 00:00:00] [OUT]   -> Handling register route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:54.925Z] User 4876 accessed /register - Status: 201
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:57.213Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:57.213Z] User 5205 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:59.499Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:01:59.499Z] User 7981 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:01.786Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:01.787Z] User 6328 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:04.073Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:04.073Z] User 2248 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:06.361Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:06.361Z] User 3561 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:08.647Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:08.647Z] User 2847 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:10.934Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:10.934Z] User 7331 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:13.221Z] Request: GET /users
+[0001-01-01 00:00:00] [OUT]   -> Handling users route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:13.221Z] User 1927 accessed /users - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:15.508Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:15.508Z] User 674 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:17.795Z] Request: GET /logout
+[0001-01-01 00:00:00] [OUT]   -> Handling logout route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:17.795Z] User 1085 accessed /logout - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:20.081Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:20.081Z] User 3644 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:22.368Z] Request: GET /
+[0001-01-01 00:00:00] [OUT]   -> Handling root route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:22.368Z] User 6375 accessed / - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:24.655Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:24.655Z] User 3126 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:26.941Z] Request: GET /profile
+[0001-01-01 00:00:00] [OUT]   -> Handling profile route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:26.941Z] User 323 accessed /profile - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:29.228Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:29.228Z] User 9501 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:31.515Z] Request: GET /login
+[0001-01-01 00:00:00] [OUT]   -> Handling login route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:31.515Z] User 2367 accessed /login - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:33.801Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:33.801Z] User 8456 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:36.088Z] Request: GET /about
+[0001-01-01 00:00:00] [OUT]   -> Handling about route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:36.088Z] User 6632 accessed /about - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:38.375Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:38.375Z] User 2966 accessed /dashboard - Status: 200
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:40.662Z] Request: GET /dashboard
+[0001-01-01 00:00:00] [OUT]   -> Handling dashboard route
+[0001-01-01 00:00:00] [OUT] [2025-12-25T18:02:40.662Z] User 8386 accessed /dashboard - Status: 200

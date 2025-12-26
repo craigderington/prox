@@ -1,14 +1,11 @@
 package process
 
 import (
-	"bufio"
 	"fmt"
-	"io/ioutil"
-	"strconv"
-	"strings"
 	"time"
 
 	"github.com/shirou/gopsutil/v3/cpu"
+	"github.com/shirou/gopsutil/v3/net"
 	gopsutil_process "github.com/shirou/gopsutil/v3/process"
 )
 
@@ -69,34 +66,14 @@ func (mc *MetricsCollector) CollectMetrics(proc *Process) (*ProcessMetrics, erro
 		}
 	}
 
-	// Collect network IO from /proc/<pid>/net/dev
+	// Collect system-wide network IO (per-process network accounting is complex and not reliably available)
+	// This provides system network totals as a proxy for process network activity
 	var netSent, netRecv uint64
-	netDevPath := fmt.Sprintf("/proc/%d/net/dev", pid)
-	data, err := ioutil.ReadFile(netDevPath)
-	if err == nil {
-		scanner := bufio.NewScanner(strings.NewReader(string(data)))
-		lineNum := 0
-		for scanner.Scan() {
-			lineNum++
-			if lineNum <= 2 {
-				continue // Skip header
-			}
-			line := strings.TrimSpace(scanner.Text())
-			if line == "" {
-				continue
-			}
-			// Split by spaces/tabs, but handle multiple spaces
-			fields := strings.Fields(line)
-			if len(fields) >= 10 {
-				// fields[0] is interface: , fields[1] is receive bytes, fields[9] is transmit bytes
-				if recvBytes, err := strconv.ParseUint(fields[1], 10, 64); err == nil {
-					netRecv += recvBytes
-				}
-				if sentBytes, err := strconv.ParseUint(fields[9], 10, 64); err == nil {
-					netSent += sentBytes
-				}
-			}
-		}
+	counters, err := net.IOCounters(false) // false = aggregate all interfaces
+	if err == nil && len(counters) > 0 {
+		// Use the first (aggregated) counter
+		netSent = counters[0].BytesSent
+		netRecv = counters[0].BytesRecv
 	}
 
 	return &ProcessMetrics{

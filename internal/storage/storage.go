@@ -121,3 +121,50 @@ func (s *Storage) RemovePID(name string) error {
 func (s *Storage) GetLogFile(name, stream string) string {
 	return filepath.Join(s.LogsDir(), fmt.Sprintf("%s-%s.log", name, stream))
 }
+
+// MetricsConfig holds configuration for metrics collection
+type MetricsConfig struct {
+	PollIntervalSeconds int `json:"poll_interval_seconds"`
+}
+
+// DefaultMetricsConfig returns the default metrics configuration
+func DefaultMetricsConfig() MetricsConfig {
+	return MetricsConfig{
+		PollIntervalSeconds: 2, // Default to 2 seconds for better performance
+	}
+}
+
+// SaveMetricsConfig saves metrics configuration
+func (s *Storage) SaveMetricsConfig(config MetricsConfig) error {
+	return s.SaveState(map[string]interface{}{
+		"type":    "metrics_config",
+		"config":  config,
+		"version": "1.0",
+	})
+}
+
+// LoadMetricsConfig loads metrics configuration
+func (s *Storage) LoadMetricsConfig() (MetricsConfig, error) {
+	var data map[string]interface{}
+	err := s.LoadState(&data)
+	if err != nil {
+		return DefaultMetricsConfig(), nil // Return defaults if no config exists
+	}
+
+	// Check if this is a metrics config
+	if data["type"] != "metrics_config" {
+		return DefaultMetricsConfig(), nil
+	}
+
+	configData, ok := data["config"].(map[string]interface{})
+	if !ok {
+		return DefaultMetricsConfig(), nil
+	}
+
+	config := DefaultMetricsConfig()
+	if pollInterval, ok := configData["poll_interval_seconds"].(float64); ok {
+		config.PollIntervalSeconds = int(pollInterval)
+	}
+
+	return config, nil
+}

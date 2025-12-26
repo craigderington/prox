@@ -1,0 +1,1004 @@
+# Logs for process: pyLogger
+# Exported: 2025-12-25T00:03:00-05:00
+# Total entries: 1000
+
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:56 - PythonLogger - INFO - Collecting warnings==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:56 - PythonLogger - INFO - Byte-compiling /path/to/nis.py to /path/to/warnings.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:56 - PythonLogger - INFO - Successfully installed spwd-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:57 - PythonLogger - INFO - Byte-compiling /path/to/tokenize.py to /path/to/fnmatch.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:57 - PythonLogger - INFO - Loading module 'glob' from '/usr/lib/python3.11/4230'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:58 - PythonLogger - INFO - Loading module 'platform' from '/usr/lib/python3.11/7251'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:58 - PythonLogger - INFO - Found json modules in package '4231'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:59 - PythonLogger - INFO - Byte-compiling /path/to/concurrent.py to /path/to/secrets.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:59 - PythonLogger - INFO - Byte-compiling /path/to/crypt.py to /path/to/tabnanny.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:56:59 - PythonLogger - INFO - Successfully installed concurrent-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:00 - PythonLogger - INFO - Importing module 'enum' (version 4233)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:00 - PythonLogger - INFO - Successfully installed decimal-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:00 - PythonLogger - INFO - Successfully installed io-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:01 - PythonLogger - INFO - Running script 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:01 - PythonLogger - INFO - Loading module 'numbers' from '/usr/lib/python3.11/4235'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:02 - PythonLogger - INFO - Loading module 'reprlib' from '/usr/lib/python3.11/7256'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:02 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:03 - PythonLogger - INFO - Executing bytecode for module 'copy'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:03 - PythonLogger - INFO - Loading module 'mmap' from '/usr/lib/python3.11/4237'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:03 - PythonLogger - INFO - Importing module 'platform' (version 7258)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:04 - PythonLogger - INFO - Importing module 'secrets' (version 4238)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:04 - PythonLogger - INFO - Installing package 'stringprep' from 7259
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:04 - PythonLogger - INFO - Executing bytecode for module 'tty'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:05 - PythonLogger - ERROR - AttributeError: 'winreg' object has no attribute 'method_7260'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:05 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'traceback'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:05 - PythonLogger - ERROR - ModuleNotFoundError: No module named 'tokenize'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:06 - PythonLogger - WARNING - UnicodeWarning: Some characters could not be decoded
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:06 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='shutil' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:07 - PythonLogger - WARNING - DeprecationWarning: 'old_7262' is deprecated, use 'new_7262' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:07 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='warnings' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:07 - PythonLogger - DEBUG - Resolving import: logging -> /path/to/asyncio
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:08 - PythonLogger - DEBUG - Loading extension module 'queue'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:08 - PythonLogger - DEBUG - Initializing interpreter state
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:08 - PythonLogger - DEBUG - Resolving import: contextlib -> /path/to/unicodedata
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:09 - PythonLogger - INFO - Found io modules in package '7265'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:09 - PythonLogger - INFO - Byte-compiling /path/to/atexit.py to /path/to/reprlib.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:10 - PythonLogger - INFO - Running script 'difflib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:10 - PythonLogger - INFO - Installing package 'sqlite3' from 4246
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:11 - PythonLogger - INFO - Collecting string==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:11 - PythonLogger - INFO - Running script 'numbers'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:11 - PythonLogger - INFO - Installing package 'xdrlib' from 7268
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:12 - PythonLogger - INFO - Successfully installed netrc-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:12 - PythonLogger - INFO - Collecting decimal==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:12 - PythonLogger - INFO - Byte-compiling /path/to/reprlib.py to /path/to/numbers.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:13 - PythonLogger - INFO - Creating namespace for package 'tty'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:13 - PythonLogger - INFO - Creating namespace for package 'concurrent'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:14 - PythonLogger - INFO - Collecting stringprep==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:14 - PythonLogger - INFO - Executing bytecode for module 'weakref'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:15 - PythonLogger - INFO - Creating namespace for package 'unicodedata'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:15 - PythonLogger - INFO - Installing package 'io' from 4252
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:15 - PythonLogger - INFO - Loading module 'gc' from '/usr/lib/python3.11/7273'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:16 - PythonLogger - INFO - Byte-compiling /path/to/textwrap.py to /path/to/ctypes.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:16 - PythonLogger - INFO - Loading module 'gc' from '/usr/lib/python3.11/7274'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:16 - PythonLogger - INFO - Installing package 'functools' from 4254
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:17 - PythonLogger - INFO - Loading module 'lzma' from '/usr/lib/python3.11/7275'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:17 - PythonLogger - INFO - Found _thread modules in package '4255'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:18 - PythonLogger - INFO - Creating namespace for package 'numbers'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:18 - PythonLogger - INFO - Running script 'fractions'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:19 - PythonLogger - INFO - Found _thread modules in package '7277'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:19 - PythonLogger - INFO - Collecting threading==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:19 - PythonLogger - INFO - Executing bytecode for module 'datetime'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:20 - PythonLogger - INFO - Executing bytecode for module 'zipfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:20 - PythonLogger - INFO - Executing bytecode for module 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:20 - PythonLogger - INFO - Loading module 'concurrent' from '/usr/lib/python3.11/4259'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:21 - PythonLogger - ERROR - IndentationError: unexpected indent at line arg_7280 in 'file_7280.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:21 - PythonLogger - ERROR - AttributeError: 'glob' object has no attribute 'method_4260'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:21 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'weakref'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:22 - PythonLogger - WARNING - UserWarning: gzip is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:22 - PythonLogger - WARNING - PendingDeprecationWarning: 'enum' will be removed in version 3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:23 - PythonLogger - WARNING - PendingDeprecationWarning: 'token' will be removed in version 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:23 - PythonLogger - WARNING - ImportWarning: Not importing directory 'copy': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:23 - PythonLogger - DEBUG - Thread 7283 started
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:24 - PythonLogger - DEBUG - Optimizing bytecode for '0.061747777858126754'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:24 - PythonLogger - DEBUG - Memory usage: 0.1382130235296632 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:24 - PythonLogger - DEBUG - Optimizing bytecode for '0.3009597010765476'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:25 - PythonLogger - INFO - Byte-compiling /path/to/stringprep.py to /path/to/tarfile.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:25 - PythonLogger - INFO - Importing module 'numbers' (version 4265)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:26 - PythonLogger - INFO - Installing package 'keyword' from 7286
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:26 - PythonLogger - INFO - Running script 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:27 - PythonLogger - INFO - Byte-compiling /path/to/glob.py to /path/to/multiprocessing.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:27 - PythonLogger - INFO - Loading module 'tty' from '/usr/lib/python3.11/4267'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:27 - PythonLogger - INFO - Importing module 'queue' (version 7288)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:28 - PythonLogger - INFO - Collecting tempfile==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:28 - PythonLogger - INFO - Loading module 'logging' from '/usr/lib/python3.11/7289'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:28 - PythonLogger - INFO - Loading module 'ast' from '/usr/lib/python3.11/4269'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:29 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:29 - PythonLogger - INFO - Importing module 'codecs' (version 4270)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:30 - PythonLogger - INFO - Running script 'ctypes'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:30 - PythonLogger - INFO - Found configparser modules in package '4271'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:31 - PythonLogger - INFO - Installing package 'sched' from 7292
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:31 - PythonLogger - INFO - Successfully installed termios-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:31 - PythonLogger - INFO - Executing bytecode for module 'posix'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:32 - PythonLogger - INFO - Found fnmatch modules in package '4273'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:32 - PythonLogger - INFO - Importing module 'asyncio' (version 7294)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:32 - PythonLogger - INFO - Byte-compiling /path/to/tarfile.py to /path/to/winreg.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:33 - PythonLogger - INFO - Importing module 'pathlib' (version 7295)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:33 - PythonLogger - INFO - Loading module 'difflib' from '/usr/lib/python3.11/4275'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:34 - PythonLogger - INFO - Found traceback modules in package '7296'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:34 - PythonLogger - INFO - Successfully installed hmac-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:35 - PythonLogger - INFO - Importing module 'gzip' (version 7297)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:35 - PythonLogger - INFO - Creating namespace for package 'getopt'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:35 - PythonLogger - INFO - Executing bytecode for module 'bz2'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:36 - PythonLogger - INFO - Loading module 'lzma' from '/usr/lib/python3.11/4278'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:36 - PythonLogger - INFO - Collecting rlcompleter==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:36 - PythonLogger - INFO - Importing module 'asyncio' (version 4279)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:37 - PythonLogger - ERROR - NameError: name 'var_7300' is not defined
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:37 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_4280'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:38 - PythonLogger - WARNING - DeprecationWarning: 'old_7301' is deprecated, use 'new_7301' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:38 - PythonLogger - INFO - Python 3.12 on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:38 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='contextlib' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:39 - PythonLogger - WARNING - PendingDeprecationWarning: 'enum' will be removed in version 3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:39 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:39 - PythonLogger - DEBUG - Loading extension module 'binary'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:40 - PythonLogger - DEBUG - Cache hit for module 'fractions'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:40 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:40 - PythonLogger - DEBUG - GC: collecting generation 0.8820281613296433...
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:41 - PythonLogger - INFO - Collecting compileall==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:41 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:42 - PythonLogger - INFO - Executing bytecode for module 'unicodedata'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:42 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:43 - PythonLogger - INFO - Creating namespace for package 'reprlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:43 - PythonLogger - INFO - Installing package 'sys' from 4287
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:43 - PythonLogger - INFO - Found rlcompleter modules in package '7308'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:44 - PythonLogger - INFO - Collecting syslog==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:44 - PythonLogger - INFO - Collecting token==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:44 - PythonLogger - INFO - Loading module 'fcntl' from '/usr/lib/python3.11/4289'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:45 - PythonLogger - INFO - Successfully installed string-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:45 - PythonLogger - INFO - Found msvcrt modules in package '4290'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:46 - PythonLogger - INFO - Loading module 'tokenize' from '/usr/lib/python3.11/7311'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:46 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:47 - PythonLogger - INFO - Executing bytecode for module 'copyreg'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:47 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:47 - PythonLogger - INFO - Running script 'syslog'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:48 - PythonLogger - INFO - Collecting msvcrt==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:48 - PythonLogger - INFO - Collecting sqlite3==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:48 - PythonLogger - INFO - Creating namespace for package 'pickletools'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:49 - PythonLogger - INFO - Executing bytecode for module 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:49 - PythonLogger - INFO - Byte-compiling /path/to/io.py to /path/to/asyncio.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:50 - PythonLogger - INFO - Loading module 'winreg' from '/usr/lib/python3.11/7316'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:50 - PythonLogger - INFO - Executing bytecode for module 'copyreg'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:51 - PythonLogger - INFO - Executing bytecode for module 'platform'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:51 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:51 - PythonLogger - INFO - Loading module 'contextvars' from '/usr/lib/python3.11/7318'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:52 - PythonLogger - INFO - Importing module 'hmac' (version 4298)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:52 - PythonLogger - INFO - Found logging modules in package '7319'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:52 - PythonLogger - INFO - Loading module 'threading' from '/usr/lib/python3.11/4299'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:53 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_7320'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:53 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:53 - PythonLogger - ERROR - IndentationError: unexpected indent at line arg_4300 in 'file_4300.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:54 - PythonLogger - WARNING - PendingDeprecationWarning: 'itertools' will be removed in version 3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:54 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:54 - PythonLogger - INFO - Python 3.8 on linux
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:55 - PythonLogger - WARNING - ImportWarning: Not importing directory 'configparser': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:55 - PythonLogger - WARNING - UserWarning: dis is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:55 - PythonLogger - DEBUG - Loading extension module 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:56 - PythonLogger - DEBUG - Thread 4303 started
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:56 - PythonLogger - DEBUG - Signal 0.17880014759992 received
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:56 - PythonLogger - DEBUG - Resolving import: syslog -> /path/to/tabnanny
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:57 - PythonLogger - INFO - Installing package 'termios' from 7325
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:57 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:58 - PythonLogger - INFO - Loading module 'ctypes' from '/usr/lib/python3.11/7326'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:58 - PythonLogger - INFO - Running script 'warnings'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:59 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:59 - PythonLogger - INFO - Loading module 'unicodedata' from '/usr/lib/python3.11/4307'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:57:59 - PythonLogger - INFO - Creating namespace for package 'struct'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:00 - PythonLogger - INFO - Installing package 'textwrap' from 4308
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:00 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:00 - PythonLogger - INFO - Successfully installed linecache-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:01 - PythonLogger - INFO - Loading module 'rlcompleter' from '/usr/lib/python3.11/7330'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:01 - PythonLogger - INFO - Successfully installed shutil-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:02 - PythonLogger - INFO - Installing package 'posix' from 7331
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:02 - PythonLogger - INFO - Collecting bz2==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:03 - PythonLogger - INFO - Loading module 'queue' from '/usr/lib/python3.11/7332'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:03 - PythonLogger - INFO - Executing bytecode for module 'csv'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:03 - PythonLogger - INFO - Creating namespace for package 'ssl'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:04 - PythonLogger - INFO - Installing package 're' from 4313
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:04 - PythonLogger - INFO - Running script 'binary'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:04 - PythonLogger - INFO - Importing module 'contextvars' (version 4314)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:05 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:05 - PythonLogger - INFO - Running script 'stringprep'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:06 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:06 - PythonLogger - INFO - Successfully installed threading-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:07 - PythonLogger - INFO - Successfully installed io-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:07 - PythonLogger - INFO - Successfully installed crypt-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:07 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:08 - PythonLogger - INFO - Collecting math==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:08 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:08 - PythonLogger - INFO - Successfully installed symtable-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:09 - PythonLogger - ERROR - ImportError: cannot import name 'function_7340' from 'warnings'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:09 - PythonLogger - ERROR - NameError: name 'var_4320' is not defined
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:09 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'hashlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:10 - PythonLogger - WARNING - DeprecationWarning: 'old_7341' is deprecated, use 'new_7341' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:10 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:11 - PythonLogger - WARNING - FutureWarning: pyclbr is deprecated and will be removed in Python 3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:11 - PythonLogger - WARNING - PendingDeprecationWarning: 'contextlib' will be removed in version 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:11 - PythonLogger - DEBUG - Loading extension module 'future'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:12 - PythonLogger - DEBUG - Cache hit for module 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:12 - PythonLogger - DEBUG - Resolving import: warnings -> /path/to/fractions
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:12 - PythonLogger - DEBUG - Optimizing bytecode for '0.18780078324313906'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:13 - PythonLogger - INFO - Installing package 'struct' from 7345
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:13 - PythonLogger - INFO - Byte-compiling /path/to/symtable.py to /path/to/errno.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:14 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:14 - PythonLogger - INFO - Collecting pickletools==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:15 - PythonLogger - INFO - Found xdrlib modules in package '7347'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:15 - PythonLogger - INFO - Found subprocess modules in package '4327'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:15 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:16 - PythonLogger - INFO - Collecting threading==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:16 - PythonLogger - INFO - Executing bytecode for module 'sqlite3'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:16 - PythonLogger - INFO - Installing package 'sqlite3' from 4329
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:17 - PythonLogger - INFO - Importing module 'errno' (version 7350)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:17 - PythonLogger - INFO - Creating namespace for package 'inspect'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:18 - PythonLogger - INFO - Installing package 'itertools' from 7351
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:18 - PythonLogger - INFO - Successfully installed fnmatch-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:19 - PythonLogger - INFO - Importing module 'msvcrt' (version 7352)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:19 - PythonLogger - INFO - Found compileall modules in package '4332'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:19 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:20 - PythonLogger - INFO - Running script 'tarfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:20 - PythonLogger - INFO - Running script 'bz2'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:20 - PythonLogger - INFO - Installing package 'ssl' from 4334
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:21 - PythonLogger - INFO - Importing module 'tarfile' (version 7355)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:21 - PythonLogger - INFO - Importing module 'getopt' (version 4335)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:22 - PythonLogger - INFO - Collecting contextlib==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:22 - PythonLogger - INFO - Importing module 'shutil' (version 4336)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:23 - PythonLogger - INFO - Executing bytecode for module 'enum'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:23 - PythonLogger - INFO - Installing package 'hashlib' from 4337
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:23 - PythonLogger - INFO - Executing bytecode for module 'token'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:24 - PythonLogger - INFO - Successfully installed _thread-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:24 - PythonLogger - INFO - Found socket modules in package '7359'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:24 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:25 - PythonLogger - ERROR - AttributeError: 'pwd' object has no attribute 'method_7360'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:25 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_4340'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:26 - PythonLogger - WARNING - FutureWarning: asyncio is deprecated and will be removed in Python 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:26 - PythonLogger - WARNING - ImportWarning: Not importing directory 'optparse': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:27 - PythonLogger - WARNING - UserWarning: itertools is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:27 - PythonLogger - WARNING - FutureWarning: hmac is deprecated and will be removed in Python 3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:27 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:28 - PythonLogger - DEBUG - Cache hit for module 'textwrap'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:28 - PythonLogger - DEBUG - Memory usage: 0.3240899292562843 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:28 - PythonLogger - DEBUG - Cache hit for module 'reprlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:29 - PythonLogger - INFO - Successfully installed sqlite3-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:29 - PythonLogger - INFO - Running script 'struct'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:30 - PythonLogger - INFO - Collecting queue==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:30 - PythonLogger - INFO - Successfully installed threading-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:31 - PythonLogger - INFO - Successfully installed stringprep-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:31 - PythonLogger - INFO - Installing package 'sqlite3' from 4347
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:31 - PythonLogger - INFO - Successfully installed csv-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:32 - PythonLogger - INFO - Collecting shutil==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:32 - PythonLogger - INFO - Loading module 'hashlib' from '/usr/lib/python3.11/7369'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:32 - PythonLogger - INFO - Executing bytecode for module 'dis'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:33 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:33 - PythonLogger - INFO - Byte-compiling /path/to/sqlite3.py to /path/to/netrc.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:34 - PythonLogger - INFO - Creating namespace for package 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:34 - PythonLogger - INFO - Collecting asyncio==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:35 - PythonLogger - INFO - Installing package 'pipes' from 7372
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:35 - PythonLogger - INFO - Executing bytecode for module 'itertools'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:35 - PythonLogger - INFO - Importing module 'fnmatch' (version 7373)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:36 - PythonLogger - INFO - Executing bytecode for module 'atexit'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:36 - PythonLogger - INFO - Successfully installed struct-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:36 - PythonLogger - INFO - Installing package 'inspect' from 4354
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:37 - PythonLogger - INFO - Executing bytecode for module 'fnmatch'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:37 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:38 - PythonLogger - INFO - Collecting site==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:38 - PythonLogger - INFO - Installing package 'shutil' from 4356
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:39 - PythonLogger - INFO - Importing module 'sqlite3' (version 7377)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:39 - PythonLogger - INFO - Importing module 'warnings' (version 4357)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:39 - PythonLogger - INFO - Successfully installed contextvars-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:40 - PythonLogger - INFO - Installing package 'copy' from 4358
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:40 - PythonLogger - INFO - Executing bytecode for module 'rlcompleter'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:40 - PythonLogger - INFO - Running script 'atexit'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:41 - PythonLogger - ERROR - ImportError: cannot import name 'function_7380' from 'sqlite3'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:41 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'fractions'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:41 - PythonLogger - ERROR - KeyError: 'var_4360'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:42 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='warnings' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:42 - PythonLogger - WARNING - UserWarning: resource is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:43 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='pathlib' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:43 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:43 - PythonLogger - DEBUG - Cache hit for module 'datetime'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:44 - PythonLogger - DEBUG - Loading extension module 'dummy_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:44 - PythonLogger - DEBUG - Initializing interpreter state
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:44 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:45 - PythonLogger - INFO - Installing package 'contextvars' from 7385
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:45 - PythonLogger - INFO - Collecting copy==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:46 - PythonLogger - INFO - Running script 'threading'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:46 - PythonLogger - INFO - Running script 'hmac'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:47 - PythonLogger - INFO - Found readline modules in package '7387'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:47 - PythonLogger - INFO - Loading module 'getopt' from '/usr/lib/python3.11/4367'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:47 - PythonLogger - INFO - Collecting secrets==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:48 - PythonLogger - INFO - Importing module 'copyreg' (version 4368)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:48 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:48 - PythonLogger - INFO - Loading module 'lzma' from '/usr/lib/python3.11/4369'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:49 - PythonLogger - INFO - Importing module 'multiprocessing' (version 7390)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:49 - PythonLogger - INFO - Collecting inspect==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:50 - PythonLogger - INFO - Byte-compiling /path/to/inspect.py to /path/to/plistlib.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:50 - PythonLogger - INFO - Installing package 'sched' from 4371
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:51 - PythonLogger - INFO - Importing module 'inspect' (version 7392)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:51 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:51 - PythonLogger - INFO - Successfully installed weakref-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:52 - PythonLogger - INFO - Collecting stringprep==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:52 - PythonLogger - INFO - Importing module 'pathlib' (version 7394)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:52 - PythonLogger - INFO - Found _thread modules in package '4374'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:53 - PythonLogger - INFO - Importing module 'pathlib' (version 7395)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:53 - PythonLogger - INFO - Executing bytecode for module 'fractions'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:54 - PythonLogger - INFO - Importing module 'dummy_thread' (version 7396)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:54 - PythonLogger - INFO - Executing bytecode for module 'copyreg'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:55 - PythonLogger - INFO - Creating namespace for package 'pathlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:55 - PythonLogger - INFO - Successfully installed glob-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:55 - PythonLogger - INFO - Found dis modules in package '7398'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:56 - PythonLogger - INFO - Running script 'tty'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:56 - PythonLogger - INFO - Found secrets modules in package '7399'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:56 - PythonLogger - INFO - Successfully installed zlib-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:57 - PythonLogger - ERROR - IndentationError: unexpected indent at line arg_7400 in 'file_7400.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:57 - PythonLogger - ERROR - ImportError: cannot import name 'function_4380' from 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:57 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'xdrlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:58 - PythonLogger - WARNING - UnicodeWarning: Some characters could not be decoded
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:58 - PythonLogger - INFO - Python 3.8 on linux
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:58 - PythonLogger - WARNING - UserWarning: warnings is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:59 - PythonLogger - WARNING - UserWarning: fnmatch is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:59 - PythonLogger - WARNING - ImportWarning: Not importing directory 'winsound': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:58:59 - PythonLogger - DEBUG - Cache hit for module 'numbers'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:00 - PythonLogger - DEBUG - Signal 0.5651835030825969 received
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:00 - PythonLogger - DEBUG - Loading extension module 'binary'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:00 - PythonLogger - DEBUG - Memory usage: 0.5922230399350262 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:01 - PythonLogger - INFO - Collecting keyword==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:01 - PythonLogger - INFO - Collecting difflib==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:02 - PythonLogger - INFO - Successfully installed numbers-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:02 - PythonLogger - INFO - Successfully installed os-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:03 - PythonLogger - INFO - Collecting weakref==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:03 - PythonLogger - INFO - Successfully installed struct-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:03 - PythonLogger - INFO - Collecting json==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:04 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:04 - PythonLogger - INFO - Running script 'sys'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:04 - PythonLogger - INFO - Creating namespace for package 'glob'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:05 - PythonLogger - INFO - Importing module 'concurrent' (version 7410)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:05 - PythonLogger - INFO - Loading module 'msvcrt' from '/usr/lib/python3.11/4390'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:06 - PythonLogger - INFO - Installing package 'unicodedata' from 7411
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:06 - PythonLogger - INFO - Creating namespace for package 'bz2'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:07 - PythonLogger - INFO - Running script 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:07 - PythonLogger - INFO - Installing package 'asyncio' from 4392
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:07 - PythonLogger - INFO - Installing package 'tokenize' from 7413
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:08 - PythonLogger - INFO - Found token modules in package '4393'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:08 - PythonLogger - INFO - Running script 'xdrlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:08 - PythonLogger - INFO - Collecting zlib==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:09 - PythonLogger - INFO - Installing package 'contextvars' from 7415
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:09 - PythonLogger - INFO - Collecting unicodedata==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:10 - PythonLogger - INFO - Loading module 'struct' from '/usr/lib/python3.11/7416'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:10 - PythonLogger - INFO - Byte-compiling /path/to/collections.py to /path/to/zlib.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:11 - PythonLogger - INFO - Byte-compiling /path/to/itertools.py to /path/to/ast.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:11 - PythonLogger - INFO - Found enum modules in package '4397'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:11 - PythonLogger - INFO - Successfully installed tempfile-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:12 - PythonLogger - INFO - Collecting configparser==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:12 - PythonLogger - INFO - Creating namespace for package 'traceback'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:12 - PythonLogger - INFO - Loading module 'platform' from '/usr/lib/python3.11/4399'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:13 - PythonLogger - ERROR - KeyError: 'var_7420'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:13 - PythonLogger - ERROR - ModuleNotFoundError: No module named 'netrc'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:14 - PythonLogger - WARNING - DeprecationWarning: 'old_7421' is deprecated, use 'new_7421' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:14 - PythonLogger - WARNING - ImportWarning: Not importing directory 'decimal': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:14 - PythonLogger - INFO - Python 3.12 on darwin
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:15 - PythonLogger - WARNING - UserWarning: linecache is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:15 - PythonLogger - WARNING - DeprecationWarning: 'old_4402' is deprecated, use 'new_4402' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:15 - PythonLogger - DEBUG - GC: collecting generation 0.42737732051438027...
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:16 - PythonLogger - DEBUG - Resolving import: io -> /path/to/winreg
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:16 - PythonLogger - DEBUG - Memory usage: 0.2891452073492774 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:16 - PythonLogger - DEBUG - Signal 0.4349534949258773 received
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:17 - PythonLogger - INFO - Running script 'fnmatch'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:17 - PythonLogger - INFO - Byte-compiling /path/to/optparse.py to /path/to/glob.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:18 - PythonLogger - INFO - Loading module 'ctypes' from '/usr/lib/python3.11/7426'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:18 - PythonLogger - INFO - Loading module 'threading' from '/usr/lib/python3.11/4406'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:19 - PythonLogger - INFO - Loading module 'itertools' from '/usr/lib/python3.11/7427'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:19 - PythonLogger - INFO - Running script 'mmap'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:19 - PythonLogger - INFO - Running script 'collections'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:20 - PythonLogger - INFO - Loading module 'spwd' from '/usr/lib/python3.11/4408'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:20 - PythonLogger - INFO - Successfully installed asyncio-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:20 - PythonLogger - INFO - Loading module 'sched' from '/usr/lib/python3.11/4409'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:21 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:21 - PythonLogger - INFO - Loading module 'unicodedata' from '/usr/lib/python3.11/4410'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:22 - PythonLogger - INFO - Byte-compiling /path/to/optparse.py to /path/to/random.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:22 - PythonLogger - INFO - Collecting msvcrt==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:23 - PythonLogger - INFO - Successfully installed pickle-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:23 - PythonLogger - INFO - Collecting readline==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:23 - PythonLogger - INFO - Creating namespace for package 'atexit'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:24 - PythonLogger - INFO - Executing bytecode for module 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:24 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:24 - PythonLogger - INFO - Loading module 'operator' from '/usr/lib/python3.11/4414'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:25 - PythonLogger - INFO - Installing package 'sched' from 7435
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:25 - PythonLogger - INFO - Loading module 're' from '/usr/lib/python3.11/4415'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:26 - PythonLogger - INFO - Creating namespace for package 'asyncio'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:26 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:27 - PythonLogger - INFO - Loading module 'difflib' from '/usr/lib/python3.11/7437'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:27 - PythonLogger - INFO - Importing module 'fractions' (version 4417)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:27 - PythonLogger - INFO - Running script 'asyncio'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:28 - PythonLogger - INFO - Found compileall modules in package '4418'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:28 - PythonLogger - INFO - Successfully installed sched-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:28 - PythonLogger - INFO - Successfully installed winsound-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:29 - PythonLogger - ERROR - NameError: name 'var_7440' is not defined
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:29 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'winreg'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:29 - PythonLogger - ERROR - ImportError: cannot import name 'function_4420' from 'asyncio'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:30 - PythonLogger - WARNING - ImportWarning: Not importing directory 'concurrent': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:30 - PythonLogger - WARNING - FutureWarning: contextlib is deprecated and will be removed in Python 3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:31 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='lzma' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:31 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='codecs' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:31 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:32 - PythonLogger - DEBUG - Loading extension module 'copy'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:32 - PythonLogger - DEBUG - Memory usage: 0.42428678685237525 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:32 - PythonLogger - DEBUG - Loading extension module 'tabnanny'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:33 - PythonLogger - INFO - Found symtable modules in package '7445'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:33 - PythonLogger - INFO - Creating namespace for package 'inspect'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:34 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:34 - PythonLogger - INFO - Byte-compiling /path/to/platform.py to /path/to/reprlib.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:35 - PythonLogger - INFO - Creating namespace for package 'hashlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:35 - PythonLogger - INFO - Byte-compiling /path/to/inspect.py to /path/to/traceback.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:35 - PythonLogger - INFO - Collecting io==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:36 - PythonLogger - INFO - Creating namespace for package 'platform'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:36 - PythonLogger - INFO - Executing bytecode for module 'operator'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:36 - PythonLogger - INFO - Creating namespace for package 'winsound'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:37 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:37 - PythonLogger - INFO - Running script 'binary'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:38 - PythonLogger - INFO - Byte-compiling /path/to/warnings.py to /path/to/dis.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:38 - PythonLogger - INFO - Executing bytecode for module 'warnings'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:39 - PythonLogger - INFO - Running script 'symtable'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:39 - PythonLogger - INFO - Loading module 'plistlib' from '/usr/lib/python3.11/4432'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:39 - PythonLogger - INFO - Running script 'tempfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:40 - PythonLogger - INFO - Byte-compiling /path/to/tokenize.py to /path/to/platform.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:40 - PythonLogger - INFO - Found tempfile modules in package '7454'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:40 - PythonLogger - INFO - Running script 'pipes'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:41 - PythonLogger - INFO - Running script 'posix'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:41 - PythonLogger - INFO - Byte-compiling /path/to/tokenize.py to /path/to/binary.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:42 - PythonLogger - INFO - Importing module 'pyclbr' (version 7456)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:42 - PythonLogger - INFO - Installing package 'pty' from 4436
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:43 - PythonLogger - INFO - Installing package 'resource' from 7457
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:43 - PythonLogger - INFO - Importing module 'pwd' (version 4437)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:43 - PythonLogger - INFO - Executing bytecode for module 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:44 - PythonLogger - INFO - Running script 'tokenize'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:44 - PythonLogger - INFO - Running script 'io'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:44 - PythonLogger - INFO - Installing package 'random' from 4439
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:45 - PythonLogger - ERROR - IndentationError: unexpected indent at line arg_7460 in 'file_7460.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:45 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_4440'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:45 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'hmac'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:46 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='sqlite3' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:46 - PythonLogger - WARNING - ImportWarning: Not importing directory 'symbol': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:47 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='contextlib' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:47 - PythonLogger - WARNING - UnicodeWarning: Some characters could not be decoded
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:47 - PythonLogger - DEBUG - Loading extension module 'bz2'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:48 - PythonLogger - DEBUG - GC: collecting generation 0.9089586218621749...
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:48 - PythonLogger - DEBUG - Thread 7464 started
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:48 - PythonLogger - DEBUG - Resolving import: socket -> /path/to/posix
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:49 - PythonLogger - INFO - Byte-compiling /path/to/numbers.py to /path/to/textwrap.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:49 - PythonLogger - INFO - Creating namespace for package 'dis'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:50 - PythonLogger - INFO - Creating namespace for package 'compileall'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:50 - PythonLogger - INFO - Loading module 'rlcompleter' from '/usr/lib/python3.11/4446'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:51 - PythonLogger - INFO - Found difflib modules in package '7467'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:51 - PythonLogger - INFO - Byte-compiling /path/to/unicodedata.py to /path/to/platform.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:51 - PythonLogger - INFO - Importing module 'pickletools' (version 7468)
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:52 - PythonLogger - INFO - Byte-compiling /path/to/socket.py to /path/to/future.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:52 - PythonLogger - INFO - Found symtable modules in package '7469'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:52 - PythonLogger - INFO - Installing package 'contextlib' from 4449
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:53 - PythonLogger - INFO - Byte-compiling /path/to/multiprocessing.py to /path/to/os.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:53 - PythonLogger - INFO - Running script 'symtable'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:54 - PythonLogger - INFO - Found posix modules in package '7471'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:54 - PythonLogger - INFO - Found symtable modules in package '4451'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:55 - PythonLogger - INFO - Found string modules in package '7472'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:55 - PythonLogger - INFO - Found symtable modules in package '4452'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:55 - PythonLogger - INFO - Loading module 'keyword' from '/usr/lib/python3.11/7473'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:56 - PythonLogger - INFO - Found compileall modules in package '4453'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:56 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:56 - PythonLogger - INFO - Loading module 'pwd' from '/usr/lib/python3.11/4454'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:57 - PythonLogger - INFO - Loading module 'time' from '/usr/lib/python3.11/7475'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:57 - PythonLogger - INFO - Executing bytecode for module 'atexit'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:58 - PythonLogger - INFO - Successfully installed numbers-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:58 - PythonLogger - INFO - Running script 'struct'
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:59 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:59 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-24 23:59:59 - PythonLogger - INFO - Importing module '_thread' (version 7478)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:00 - PythonLogger - INFO - Found lzma modules in package '4458'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:00 - PythonLogger - INFO - Collecting msvcrt==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:00 - PythonLogger - INFO - Creating namespace for package 'pathlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:01 - PythonLogger - ERROR - ModuleNotFoundError: No module named 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:01 - PythonLogger - ERROR - NameError: name 'var_4460' is not defined
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:02 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:02 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:03 - PythonLogger - WARNING - DeprecationWarning: 'old_7482' is deprecated, use 'new_7482' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:03 - PythonLogger - WARNING - UserWarning: tokenize is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:03 - PythonLogger - DEBUG - Memory usage: 0.9190651362203954 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:04 - PythonLogger - DEBUG - Thread 4463 started
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:04 - PythonLogger - DEBUG - Memory usage: 0.11109246149379937 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:04 - PythonLogger - DEBUG - Memory usage: 0.9052609213435536 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:05 - PythonLogger - INFO - Loading module 'platform' from '/usr/lib/python3.11/7485'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:05 - PythonLogger - INFO - Successfully installed sched-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:06 - PythonLogger - INFO - Installing package 'csv' from 7486
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:06 - PythonLogger - INFO - Executing bytecode for module 'mmap'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:07 - PythonLogger - INFO - Executing bytecode for module 'glob'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:07 - PythonLogger - INFO - Loading module 'threading' from '/usr/lib/python3.11/4467'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:07 - PythonLogger - INFO - Successfully installed fnmatch-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:08 - PythonLogger - INFO - Creating namespace for package 'concurrent'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:08 - PythonLogger - INFO - Successfully installed winsound-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:08 - PythonLogger - INFO - Successfully installed binary-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:09 - PythonLogger - INFO - Executing bytecode for module 'shutil'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:09 - PythonLogger - INFO - Importing module 'io' (version 4470)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:10 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:10 - PythonLogger - INFO - Executing bytecode for module 'pwd'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:11 - PythonLogger - INFO - Collecting tty==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:11 - PythonLogger - INFO - Byte-compiling /path/to/asyncio.py to /path/to/future.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:11 - PythonLogger - INFO - Importing module 'errno' (version 7493)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:12 - PythonLogger - INFO - Successfully installed linecache-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:12 - PythonLogger - INFO - Importing module 'gzip' (version 7494)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:12 - PythonLogger - INFO - Successfully installed textwrap-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:13 - PythonLogger - INFO - Found threading modules in package '7495'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:13 - PythonLogger - INFO - Running script '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:14 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:14 - PythonLogger - INFO - Running script 'contextlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:15 - PythonLogger - INFO - Collecting symbol==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:15 - PythonLogger - INFO - Successfully installed compileall-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:15 - PythonLogger - INFO - Creating namespace for package 'xdrlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:16 - PythonLogger - INFO - Importing module 'pyclbr' (version 4478)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:16 - PythonLogger - INFO - Executing bytecode for module 'tempfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:16 - PythonLogger - INFO - Successfully installed fcntl-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:17 - PythonLogger - ERROR - TypeError: {} argument must be {}, not '{}'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:17 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'readline'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:17 - PythonLogger - ERROR - IndexError: list index out of range
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:18 - PythonLogger - WARNING - UserWarning: string is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:18 - PythonLogger - INFO - Python 3.9 on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:18 - PythonLogger - WARNING - FutureWarning: pyclbr is deprecated and will be removed in Python 3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:19 - PythonLogger - WARNING - FutureWarning: sys is deprecated and will be removed in Python 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:19 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:19 - PythonLogger - DEBUG - Memory usage: 0.6010022164822582 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:20 - PythonLogger - DEBUG - Initializing interpreter state
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:20 - PythonLogger - DEBUG - Resolving import: spwd -> /path/to/zipfile
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:20 - PythonLogger - DEBUG - Optimizing bytecode for '0.895202557990497'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:21 - PythonLogger - INFO - Byte-compiling /path/to/os.py to /path/to/spwd.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:21 - PythonLogger - INFO - Installing package 'configparser' from 4485
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:22 - PythonLogger - INFO - Loading module 'zipfile' from '/usr/lib/python3.11/7506'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:22 - PythonLogger - INFO - Executing bytecode for module 'tempfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:23 - PythonLogger - INFO - Collecting grp==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:23 - PythonLogger - INFO - Found difflib modules in package '4487'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:23 - PythonLogger - INFO - Creating namespace for package 'tarfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:24 - PythonLogger - INFO - Byte-compiling /path/to/contextvars.py to /path/to/contextvars.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:24 - PythonLogger - INFO - Creating namespace for package 'msvcrt'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:24 - PythonLogger - INFO - Creating namespace for package 'multiprocessing'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:25 - PythonLogger - INFO - Successfully installed enum-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:25 - PythonLogger - INFO - Found sched modules in package '4490'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:26 - PythonLogger - INFO - Executing bytecode for module 'stringprep'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:26 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:27 - PythonLogger - INFO - Importing module 'operator' (version 7512)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:27 - PythonLogger - INFO - Executing bytecode for module 'io'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:27 - PythonLogger - INFO - Importing module 'site' (version 7513)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:28 - PythonLogger - INFO - Installing package 'unicodedata' from 4493
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:28 - PythonLogger - INFO - Collecting atexit==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:28 - PythonLogger - INFO - Importing module 'inspect' (version 4494)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:29 - PythonLogger - INFO - Executing bytecode for module 'queue'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:29 - PythonLogger - INFO - Running script 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:30 - PythonLogger - INFO - Executing bytecode for module 'tarfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:30 - PythonLogger - INFO - Found glob modules in package '4496'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:31 - PythonLogger - INFO - Loading module 'fnmatch' from '/usr/lib/python3.11/7517'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:31 - PythonLogger - INFO - Running script 'pickle'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:31 - PythonLogger - INFO - Executing bytecode for module 'readline'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:32 - PythonLogger - INFO - Loading module 'netrc' from '/usr/lib/python3.11/4498'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:32 - PythonLogger - INFO - Installing package 'ssl' from 7519
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:32 - PythonLogger - INFO - Loading module 'datetime' from '/usr/lib/python3.11/4499'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:33 - PythonLogger - ERROR - KeyError: 'var_7520'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:33 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_4500'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:33 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'textwrap'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:34 - PythonLogger - WARNING - DeprecationWarning: 'old_7521' is deprecated, use 'new_7521' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:34 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:34 - PythonLogger - INFO - Python 3.11 on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:35 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:35 - PythonLogger - WARNING - UnicodeWarning: Some characters could not be decoded
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:35 - PythonLogger - DEBUG - Thread 7523 started
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:36 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:36 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:36 - PythonLogger - DEBUG - Thread 4504 started
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:37 - PythonLogger - INFO - Running script '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:37 - PythonLogger - INFO - Creating namespace for package 'pickletools'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:38 - PythonLogger - INFO - Importing module 'msvcrt' (version 7526)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:38 - PythonLogger - INFO - Installing package 'pyclbr' from 4506
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:39 - PythonLogger - INFO - Running script 'contextlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:39 - PythonLogger - INFO - Found site modules in package '4507'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:39 - PythonLogger - INFO - Running script 'contextvars'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:40 - PythonLogger - INFO - Importing module 'future' (version 4508)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:40 - PythonLogger - INFO - Running script 'readline'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:40 - PythonLogger - INFO - Running script 'xdrlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:41 - PythonLogger - INFO - Loading module 'dummy_thread' from '/usr/lib/python3.11/7530'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:41 - PythonLogger - INFO - Found pipes modules in package '4510'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:42 - PythonLogger - INFO - Found itertools modules in package '7531'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:42 - PythonLogger - INFO - Collecting symtable==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:43 - PythonLogger - INFO - Byte-compiling /path/to/dummy_thread.py to /path/to/functools.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:43 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:43 - PythonLogger - INFO - Byte-compiling /path/to/glob.py to /path/to/socket.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:44 - PythonLogger - INFO - Importing module 'asyncio' (version 4513)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:44 - PythonLogger - INFO - Executing bytecode for module 'py_compile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:44 - PythonLogger - INFO - Collecting glob==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:45 - PythonLogger - INFO - Successfully installed hashlib-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:45 - PythonLogger - INFO - Collecting queue==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:46 - PythonLogger - INFO - Byte-compiling /path/to/contextvars.py to /path/to/codecs.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:46 - PythonLogger - INFO - Loading module 'queue' from '/usr/lib/python3.11/4516'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:47 - PythonLogger - INFO - Found asyncio modules in package '7537'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:47 - PythonLogger - INFO - Byte-compiling /path/to/queue.py to /path/to/pprint.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:47 - PythonLogger - INFO - Running script 'contextvars'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:48 - PythonLogger - INFO - Loading module 'pickletools' from '/usr/lib/python3.11/4518'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:48 - PythonLogger - INFO - Found concurrent modules in package '7539'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:48 - PythonLogger - INFO - Running script 'symtable'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:49 - PythonLogger - ERROR - TypeError: {} argument must be {}, not '{}'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:49 - PythonLogger - ERROR - NameError: name 'var_4520' is not defined
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:50 - PythonLogger - WARNING - PendingDeprecationWarning: 'functools' will be removed in version 3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:50 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='getopt' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:51 - PythonLogger - WARNING - PendingDeprecationWarning: 'decimal' will be removed in version 3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:51 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:51 - PythonLogger - DEBUG - Memory usage: 0.5749605373911301 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:52 - PythonLogger - DEBUG - Cache hit for module 'winsound'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:52 - PythonLogger - DEBUG - Memory usage: 0.0261996836588193 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:52 - PythonLogger - DEBUG - Signal 0.19860184757021063 received
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:53 - PythonLogger - INFO - Found mmap modules in package '7545'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:53 - PythonLogger - INFO - Found fractions modules in package '4525'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:54 - PythonLogger - INFO - Loading module 'binary' from '/usr/lib/python3.11/7546'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:54 - PythonLogger - INFO - Collecting difflib==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:55 - PythonLogger - INFO - Installing package 'unicodedata' from 7547
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:55 - PythonLogger - INFO - Found dis modules in package '4527'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:56 - PythonLogger - INFO - Running script 'py_compile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:56 - PythonLogger - INFO - Loading module 'collections' from '/usr/lib/python3.11/4528'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:56 - PythonLogger - INFO - Collecting site==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:56 - PythonLogger - INFO - Importing module 'syslog' (version 4529)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:57 - PythonLogger - INFO - Running script 'site'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:57 - PythonLogger - INFO - Installing package 'py_compile' from 4530
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:58 - PythonLogger - INFO - Successfully installed stringprep-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:58 - PythonLogger - INFO - Importing module 'struct' (version 4531)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:59 - PythonLogger - INFO - Collecting pwd==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:00:59 - PythonLogger - INFO - Executing bytecode for module 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:00 - PythonLogger - INFO - Installing package 'pipes' from 7553
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:00 - PythonLogger - INFO - Loading module 'crypt' from '/usr/lib/python3.11/4533'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:00 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:00 - PythonLogger - INFO - Executing bytecode for module '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:01 - PythonLogger - INFO - Loading module 'pickle' from '/usr/lib/python3.11/7555'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:01 - PythonLogger - INFO - Creating namespace for package 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:02 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:02 - PythonLogger - INFO - Successfully installed hashlib-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:03 - PythonLogger - INFO - Collecting json==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:03 - PythonLogger - INFO - Successfully installed hmac-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:04 - PythonLogger - INFO - Importing module 'symbol' (version 7558)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:04 - PythonLogger - INFO - Installing package 'reprlib' from 4538
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:04 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:04 - PythonLogger - INFO - Successfully installed ssl-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:05 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_7560'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:05 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'token'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:05 - PythonLogger - ERROR - TypeError: {} argument must be {}, not '{}'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:06 - PythonLogger - WARNING - DeprecationWarning: 'old_7561' is deprecated, use 'new_7561' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:06 - PythonLogger - WARNING - DeprecationWarning: 'old_4541' is deprecated, use 'new_4541' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:07 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='contextvars' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:07 - PythonLogger - WARNING - UserWarning: py_compile is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:08 - PythonLogger - DEBUG - Loading extension module 'xdrlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:08 - PythonLogger - DEBUG - Loading extension module 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:08 - PythonLogger - DEBUG - Thread 7564 started
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:08 - PythonLogger - DEBUG - GC: collecting generation 0.408500897380634...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:09 - PythonLogger - INFO - Byte-compiling /path/to/fcntl.py to /path/to/io.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:09 - PythonLogger - INFO - Successfully installed copyreg-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:10 - PythonLogger - INFO - Successfully installed concurrent-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:10 - PythonLogger - INFO - Loading module 'zlib' from '/usr/lib/python3.11/4546'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:11 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:11 - PythonLogger - INFO - Executing bytecode for module 'sys'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:12 - PythonLogger - INFO - Byte-compiling /path/to/multiprocessing.py to /path/to/asyncio.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:12 - PythonLogger - INFO - Successfully installed warnings-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:12 - PythonLogger - INFO - Creating namespace for package 'plistlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:12 - PythonLogger - INFO - Importing module 'queue' (version 4549)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:13 - PythonLogger - INFO - Found future modules in package '7570'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:13 - PythonLogger - INFO - Successfully installed functools-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:14 - PythonLogger - INFO - Found numbers modules in package '7571'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:14 - PythonLogger - INFO - Successfully installed configparser-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:15 - PythonLogger - INFO - Byte-compiling /path/to/netrc.py to /path/to/rlcompleter.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:15 - PythonLogger - INFO - Collecting pwd==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:16 - PythonLogger - INFO - Found contextlib modules in package '7573'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:16 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:16 - PythonLogger - INFO - Byte-compiling /path/to/rlcompleter.py to /path/to/zipfile.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:16 - PythonLogger - INFO - Loading module 'pprint' from '/usr/lib/python3.11/4554'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:17 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:17 - PythonLogger - INFO - Found linecache modules in package '4555'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:18 - PythonLogger - INFO - Executing bytecode for module 'termios'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:18 - PythonLogger - INFO - Importing module 'hashlib' (version 4556)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:19 - PythonLogger - INFO - Found atexit modules in package '7577'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:19 - PythonLogger - INFO - Collecting queue==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:20 - PythonLogger - INFO - Collecting tabnanny==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:20 - PythonLogger - INFO - Found shutil modules in package '4558'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:20 - PythonLogger - INFO - Collecting zlib==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:20 - PythonLogger - INFO - Successfully installed threading-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:21 - PythonLogger - ERROR - SyntaxError: invalid syntax at line arg_7580 in file 'file_7580.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:21 - PythonLogger - ERROR - KeyError: 'var_4560'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:21 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'future'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:22 - PythonLogger - WARNING - ImportWarning: Not importing directory 'gc': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:22 - PythonLogger - WARNING - PendingDeprecationWarning: 'textwrap' will be removed in version 3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:23 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:23 - PythonLogger - WARNING - UserWarning: tabnanny is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:24 - PythonLogger - DEBUG - Memory usage: 0.0010764991376225222 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:24 - PythonLogger - DEBUG - Signal 0.9454122232864514 received
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:24 - PythonLogger - DEBUG - Signal 0.2600002203770714 received
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:24 - PythonLogger - DEBUG - Cache hit for module 'multiprocessing'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:25 - PythonLogger - INFO - Importing module 'queue' (version 7585)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:25 - PythonLogger - INFO - Byte-compiling /path/to/msvcrt.py to /path/to/termios.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:26 - PythonLogger - INFO - Importing module 'msvcrt' (version 7586)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:26 - PythonLogger - INFO - Creating namespace for package 'functools'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:27 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:27 - PythonLogger - INFO - Byte-compiling /path/to/ctypes.py to /path/to/termios.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:28 - PythonLogger - INFO - Creating namespace for package 'asyncio'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:28 - PythonLogger - INFO - Found bz2 modules in package '4568'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:28 - PythonLogger - INFO - Running script 'struct'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:28 - PythonLogger - INFO - Collecting keyword==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:29 - PythonLogger - INFO - Successfully installed multiprocessing-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:29 - PythonLogger - INFO - Importing module 'sched' (version 4570)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:30 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:30 - PythonLogger - INFO - Creating namespace for package 'tempfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:31 - PythonLogger - INFO - Collecting errno==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:31 - PythonLogger - INFO - Found tempfile modules in package '4572'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:32 - PythonLogger - INFO - Creating namespace for package 'tabnanny'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:32 - PythonLogger - INFO - Running script 'warnings'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:32 - PythonLogger - INFO - Loading module 'collections' from '/usr/lib/python3.11/7594'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:32 - PythonLogger - INFO - Running script 'warnings'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:33 - PythonLogger - INFO - Successfully installed secrets-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:33 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:34 - PythonLogger - INFO - Installing package 'io' from 7596
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:34 - PythonLogger - INFO - Collecting token==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:35 - PythonLogger - INFO - Creating namespace for package 'fcntl'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:35 - PythonLogger - INFO - Byte-compiling /path/to/xdrlib.py to /path/to/numbers.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:36 - PythonLogger - INFO - Running script 'socket'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:36 - PythonLogger - INFO - Running script 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:36 - PythonLogger - INFO - Collecting hmac==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:36 - PythonLogger - INFO - Creating namespace for package 'future'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:37 - PythonLogger - ERROR - ImportError: cannot import name 'function_7600' from 'copyreg'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:37 - PythonLogger - ERROR - KeyError: 'var_4580'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:38 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='os' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:38 - PythonLogger - INFO - Python 3.11 on linux
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:38 - PythonLogger - WARNING - ImportWarning: Not importing directory 'ast': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:39 - PythonLogger - WARNING - PendingDeprecationWarning: 'numbers' will be removed in version 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:39 - PythonLogger - WARNING - UserWarning: tty is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:40 - PythonLogger - DEBUG - GC: collecting generation 0.8649446585799668...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:40 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:40 - PythonLogger - DEBUG - Loading extension module 'difflib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:40 - PythonLogger - DEBUG - Resolving import: token -> /path/to/os
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:41 - PythonLogger - INFO - Loading module 'spwd' from '/usr/lib/python3.11/7605'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:41 - PythonLogger - INFO - Collecting weakref==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:42 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:42 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:43 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:43 - PythonLogger - INFO - Creating namespace for package 'sqlite3'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:44 - PythonLogger - INFO - Successfully installed reprlib-3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:44 - PythonLogger - INFO - Installing package 'hashlib' from 4588
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:44 - PythonLogger - INFO - Successfully installed netrc-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:44 - PythonLogger - INFO - Byte-compiling /path/to/inspect.py to /path/to/random.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:45 - PythonLogger - INFO - Installing package 'threading' from 7610
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:45 - PythonLogger - INFO - Found stringprep modules in package '4590'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:46 - PythonLogger - INFO - Successfully installed msvcrt-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:46 - PythonLogger - INFO - Collecting warnings==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:47 - PythonLogger - INFO - Executing bytecode for module 'sched'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:47 - PythonLogger - INFO - Executing bytecode for module 'nis'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:48 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:48 - PythonLogger - INFO - Found sqlite3 modules in package '4593'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:48 - PythonLogger - INFO - Importing module 'io' (version 7614)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:48 - PythonLogger - INFO - Installing package 'py_compile' from 4594
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:49 - PythonLogger - INFO - Collecting string==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:49 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:50 - PythonLogger - INFO - Installing package 'msvcrt' from 7616
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:50 - PythonLogger - INFO - Installing package 'csv' from 4596
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:51 - PythonLogger - INFO - Importing module 'ssl' (version 7617)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:51 - PythonLogger - INFO - Creating namespace for package 'os'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:52 - PythonLogger - INFO - Collecting spwd==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:52 - PythonLogger - INFO - Collecting ctypes==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:52 - PythonLogger - INFO - Found difflib modules in package '7619'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:52 - PythonLogger - INFO - Successfully installed pprint-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:53 - PythonLogger - ERROR - ModuleNotFoundError: No module named 'inspect'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:53 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:53 - PythonLogger - ERROR - AttributeError: 'logging' object has no attribute 'method_4600'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:54 - PythonLogger - WARNING - DeprecationWarning: 'old_7621' is deprecated, use 'new_7621' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:54 - PythonLogger - WARNING - DeprecationWarning: 'old_4601' is deprecated, use 'new_4601' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:54 - PythonLogger - INFO - Python 3.8 on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:55 - PythonLogger - WARNING - UnicodeWarning: Some characters could not be decoded
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:55 - PythonLogger - WARNING - UserWarning: atexit is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:56 - PythonLogger - DEBUG - Memory usage: 0.031570695435574295 bytes allocated
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:56 - PythonLogger - DEBUG - Initializing interpreter state
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:56 - PythonLogger - DEBUG - Signal 0.9739670032115073 received
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:56 - PythonLogger - DEBUG - Optimizing bytecode for '0.8553471744471695'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:57 - PythonLogger - INFO - Creating namespace for package 'enum'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:57 - PythonLogger - INFO - Byte-compiling /path/to/getopt.py to /path/to/random.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:58 - PythonLogger - INFO - Byte-compiling /path/to/token.py to /path/to/sched.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:58 - PythonLogger - INFO - Installing package 'collections' from 4606
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:59 - PythonLogger - INFO - Running script 'ssl'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:01:59 - PythonLogger - INFO - Executing bytecode for module 'readline'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:00 - PythonLogger - INFO - Loading module 'winreg' from '/usr/lib/python3.11/7628'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:00 - PythonLogger - INFO - Executing bytecode for module 'tokenize'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:00 - PythonLogger - INFO - Successfully installed functools-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:00 - PythonLogger - INFO - Loading module 'pipes' from '/usr/lib/python3.11/4609'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:01 - PythonLogger - INFO - Collecting symtable==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:01 - PythonLogger - INFO - Installing package 'logging' from 4610
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:02 - PythonLogger - INFO - Collecting compileall==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:02 - PythonLogger - INFO - Importing module 'dis' (version 4611)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:03 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:03 - PythonLogger - INFO - Executing bytecode for module 'time'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:04 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:04 - PythonLogger - INFO - Found time modules in package '4613'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:04 - PythonLogger - INFO - Installing package 'mmap' from 7634
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:04 - PythonLogger - INFO - Importing module 'gzip' (version 4614)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:05 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:05 - PythonLogger - INFO - Loading module 'hmac' from '/usr/lib/python3.11/4615'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:06 - PythonLogger - INFO - Creating namespace for package 'asyncio'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:06 - PythonLogger - INFO - Byte-compiling /path/to/gzip.py to /path/to/fractions.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:07 - PythonLogger - INFO - Byte-compiling /path/to/sqlite3.py to /path/to/bz2.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:07 - PythonLogger - INFO - Importing module 're' (version 4617)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:08 - PythonLogger - INFO - Successfully installed dummy_thread-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:08 - PythonLogger - INFO - Importing module 'resource' (version 4618)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:08 - PythonLogger - INFO - Installing package 'sqlite3' from 7639
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:08 - PythonLogger - INFO - Byte-compiling /path/to/hashlib.py to /path/to/csv.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:09 - PythonLogger - ERROR - AttributeError: 'pickle' object has no attribute 'method_7640'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:09 - PythonLogger - ERROR - AttributeError: 'hashlib' object has no attribute 'method_4620'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:09 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'warnings'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:10 - PythonLogger - WARNING - DeprecationWarning: 'old_7641' is deprecated, use 'new_7641' instead
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:10 - PythonLogger - WARNING - UnicodeWarning: Some characters could not be decoded
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:11 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:11 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='hmac' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:12 - PythonLogger - DEBUG - Initializing interpreter state
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:12 - PythonLogger - DEBUG - GC: collecting generation 0.8192301629779237...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:12 - PythonLogger - DEBUG - Cache hit for module 'argparse'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:12 - PythonLogger - DEBUG - GC: collecting generation 0.22473504716766451...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:13 - PythonLogger - INFO - Loading module 'threading' from '/usr/lib/python3.11/7645'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:13 - PythonLogger - INFO - Executing bytecode for module 'pyclbr'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:14 - PythonLogger - INFO - Creating namespace for package 'nis'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:14 - PythonLogger - INFO - Collecting contextvars==3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:15 - PythonLogger - INFO - Collecting asyncio==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:15 - PythonLogger - INFO - Creating namespace for package 'sqlite3'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:16 - PythonLogger - INFO - Running script 'contextvars'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:16 - PythonLogger - INFO - Byte-compiling /path/to/threading.py to /path/to/pprint.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:16 - PythonLogger - INFO - Creating namespace for package 'datetime'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:16 - PythonLogger - INFO - Creating namespace for package 'getopt'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:17 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:17 - PythonLogger - INFO - Importing module 'tarfile' (version 4630)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:18 - PythonLogger - INFO - Loading module 'hmac' from '/usr/lib/python3.11/7651'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:18 - PythonLogger - INFO - Executing bytecode for module 'nis'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:19 - PythonLogger - INFO - Creating namespace for package 'tabnanny'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:19 - PythonLogger - INFO - Successfully installed pyclbr-3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:20 - PythonLogger - INFO - Installing package 'py_compile' from 7653
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:20 - PythonLogger - INFO - Importing module 'tarfile' (version 4633)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:20 - PythonLogger - INFO - Executing bytecode for module 'threading'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:20 - PythonLogger - INFO - Found numbers modules in package '4634'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:21 - PythonLogger - INFO - Found contextlib modules in package '7655'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:21 - PythonLogger - INFO - Installing package 'numbers' from 4635
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:22 - PythonLogger - INFO - Collecting sys==3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:22 - PythonLogger - INFO - Importing module 'compileall' (version 4636)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:23 - PythonLogger - INFO - Loading module 'resource' from '/usr/lib/python3.11/7657'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:23 - PythonLogger - INFO - Importing module 'socket' (version 4637)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:24 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:24 - PythonLogger - INFO - Byte-compiling /path/to/shutil.py to /path/to/tty.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:24 - PythonLogger - INFO - Byte-compiling /path/to/bz2.py to /path/to/unicodedata.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:24 - PythonLogger - INFO - Executing bytecode for module 'csv'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:25 - PythonLogger - ERROR - ValueError: invalid literal for int() with base 10: 'var_7660'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:25 - PythonLogger - ERROR - NameError: name 'var_4640' is not defined
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:26 - PythonLogger - WARNING - PendingDeprecationWarning: '_thread' will be removed in version 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:26 - PythonLogger - WARNING - UserWarning: tarfile is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:27 - PythonLogger - WARNING - UserWarning: zipfile is not a valid path
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:27 - PythonLogger - WARNING - ImportWarning: Not importing directory 'grp': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:28 - PythonLogger - DEBUG - GC: collecting generation 0.7590814203694698...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:28 - PythonLogger - DEBUG - Frame executed in {:.3f}ms
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:28 - PythonLogger - DEBUG - Initializing interpreter state
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:28 - PythonLogger - DEBUG - Loading extension module 'queue'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:29 - PythonLogger - INFO - Installing package 'hashlib' from 7665
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:29 - PythonLogger - INFO - Importing module 'ast' (version 4645)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:30 - PythonLogger - INFO - Executing bytecode for module '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:30 - PythonLogger - INFO - Running script 'struct'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:31 - PythonLogger - INFO - Creating namespace for package 'contextlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:31 - PythonLogger - INFO - Creating namespace for package 'plistlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:32 - PythonLogger - INFO - Byte-compiling /path/to/unicodedata.py to /path/to/csv.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:32 - PythonLogger - INFO - Executing bytecode for module 'fractions'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:32 - PythonLogger - INFO - Collecting hmac==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:32 - PythonLogger - INFO - Importing module 'weakref' (version 4649)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:33 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:33 - PythonLogger - INFO - Successfully installed random-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:34 - PythonLogger - INFO - Successfully installed getopt-3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:34 - PythonLogger - INFO - Running script 're'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:35 - PythonLogger - INFO - Executing bytecode for module 'tempfile'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:35 - PythonLogger - INFO - Executing bytecode for module 'nis'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:36 - PythonLogger - INFO - Byte-compiling /path/to/rlcompleter.py to /path/to/collections.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:36 - PythonLogger - INFO - Byte-compiling /path/to/sched.py to /path/to/dummy_thread.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:36 - PythonLogger - INFO - Byte-compiling /path/to/traceback.py to /path/to/threading.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:36 - PythonLogger - INFO - Executing bytecode for module 'collections'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:37 - PythonLogger - INFO - Loading module 'netrc' from '/usr/lib/python3.11/7675'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:37 - PythonLogger - INFO - Executing bytecode for module 'mmap'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:38 - PythonLogger - INFO - Byte-compiling /path/to/binary.py to /path/to/resource.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:38 - PythonLogger - INFO - Executing bytecode for module 'multiprocessing'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:39 - PythonLogger - INFO - Byte-compiling /path/to/warnings.py to /path/to/resource.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:39 - PythonLogger - INFO - Byte-compiling /path/to/concurrent.py to /path/to/termios.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:40 - PythonLogger - INFO - Successfully installed crypt-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:40 - PythonLogger - INFO - Found warnings modules in package '4658'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:40 - PythonLogger - INFO - Byte-compiling /path/to/queue.py to /path/to/threading.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:40 - PythonLogger - INFO - Successfully installed subprocess-3.8
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:41 - PythonLogger - ERROR - SyntaxError: invalid syntax at line arg_7680 in file 'file_7680.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:41 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'socket'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:41 - PythonLogger - ERROR - ModuleNotFoundError: No module named '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:42 - PythonLogger - WARNING - PendingDeprecationWarning: 'copy' will be removed in version 3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:42 - PythonLogger - WARNING - ImportWarning: Not importing directory 'bz2': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:43 - PythonLogger - WARNING - FutureWarning: _thread is deprecated and will be removed in Python 3.9
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:43 - PythonLogger - WARNING - ImportWarning: Not importing directory 'threading': missing __init__.py
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:44 - PythonLogger - DEBUG - Optimizing bytecode for '0.5345855574260127'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:44 - PythonLogger - DEBUG - Optimizing bytecode for '0.2932269017403364'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:44 - PythonLogger - DEBUG - Resolving import: symbol -> /path/to/pathlib
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:44 - PythonLogger - DEBUG - GC: collecting generation 0.2903578246352205...
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:45 - PythonLogger - INFO - Installing package 're' from 7685
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:45 - PythonLogger - INFO - Found traceback modules in package '4665'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:46 - PythonLogger - INFO - Python {}.{}.{} (tags/v{}.{}.{}, Dec  1 2023, 00:00:00) [MSC v.1937 64 bit (AMD64)] on win32
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:46 - PythonLogger - INFO - Installing package 'winsound' from 4666
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:47 - PythonLogger - INFO - Executing bytecode for module 'socket'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:47 - PythonLogger - INFO - Creating namespace for package 'decimal'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:48 - PythonLogger - INFO - Found dis modules in package '7688'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:48 - PythonLogger - INFO - Collecting dummy_thread==3.12
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:48 - PythonLogger - INFO - Successfully installed zlib-3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:48 - PythonLogger - INFO - Running script 'crypt'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:49 - PythonLogger - INFO - Importing module 'zlib' (version 7690)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:49 - PythonLogger - INFO - Creating namespace for package 'tty'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:50 - PythonLogger - INFO - Collecting itertools==3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:50 - PythonLogger - INFO - Collecting bz2==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:51 - PythonLogger - INFO - Executing bytecode for module 'decimal'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:51 - PythonLogger - INFO - Importing module 'textwrap' (version 4672)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:52 - PythonLogger - INFO - Executing bytecode for module '_thread'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:52 - PythonLogger - INFO - Importing module 'concurrent' (version 4673)
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:52 - PythonLogger - INFO - Byte-compiling /path/to/pathlib.py to /path/to/dis.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:52 - PythonLogger - INFO - Found threading modules in package '4674'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:53 - PythonLogger - INFO - Collecting plistlib==3.11
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:53 - PythonLogger - INFO - Byte-compiling /path/to/os.py to /path/to/fcntl.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:54 - PythonLogger - INFO - Found binary modules in package '7696'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:54 - PythonLogger - INFO - Running script 'functools'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:55 - PythonLogger - INFO - Byte-compiling /path/to/sqlite3.py to /path/to/grp.pyc
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:55 - PythonLogger - INFO - Installing package 'queue' from 4677
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:56 - PythonLogger - INFO - Creating namespace for package 're'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:56 - PythonLogger - INFO - Found string modules in package '4678'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:56 - PythonLogger - INFO - Executing bytecode for module 'plistlib'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:56 - PythonLogger - INFO - Running script 'platform'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:57 - PythonLogger - ERROR - TypeError: {} argument must be {}, not '{}'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:57 - PythonLogger - ERROR - SyntaxError: invalid syntax at line arg_4680 in file 'file_4680.py'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:57 - PythonLogger - ERROR - Exception during import:
+[0001-01-01 00:00:00] [OUT] Traceback (most recent call last):
+[0001-01-01 00:00:00] [OUT]   File "/home/craig/Work/prox/python_logger.py", line 319, in <module>
+[0001-01-01 00:00:00] [OUT]     raise ImportError(f"No module named '{random.choice(PYTHON_LIBRARIES)}'")
+[0001-01-01 00:00:00] [OUT] ImportError: No module named 'rlcompleter'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:58 - PythonLogger - WARNING - PendingDeprecationWarning: 'inspect' will be removed in version 3.10
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:58 - PythonLogger - INFO - Python 3.10 on linux
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:58 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:59 - PythonLogger - WARNING - ResourceWarning: unclosed file <_io.TextIOWrapper name='io' mode='r' encoding='UTF-8'>
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:02:59 - PythonLogger - WARNING - SyntaxWarning: 'is' with a literal. Did you mean '=='?
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:03:00 - PythonLogger - DEBUG - Cache hit for module 'syslog'
+[0001-01-01 00:00:00] [OUT] 2025-12-25 00:03:00 - PythonLogger - DEBUG - Signal 0.5285478949952793 received

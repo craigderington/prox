@@ -30,9 +30,9 @@ type LogsModel struct {
 	followMode    bool
 	loading       bool
 	err           error
-	writingToFile bool      // Toggle state for continuous writing
-	logFile       *os.File  // Handle to open log file
-	logFilePath   string    // Path to the log file being written
+	writingToFile bool     // Toggle state for continuous writing
+	logFile       *os.File // Handle to open log file
+	logFilePath   string   // Path to the log file being written
 }
 
 // NewLogsModel creates a new logs view model
@@ -133,9 +133,9 @@ func (m LogsModel) Update(msg tea.Msg) (LogsModel, tea.Cmd) {
 				}
 
 				// Write header
-				file.WriteString(fmt.Sprintf("# Logs for process: %s\n", m.processName))
-				file.WriteString(fmt.Sprintf("# Started: %s\n", time.Now().Format(time.RFC3339)))
-				file.WriteString(fmt.Sprintf("# Continuous write mode - logs will be appended in real-time\n\n"))
+				file.WriteString("# Logs for process: " + m.processName + "\n")
+				file.WriteString("# Started: " + time.Now().Format(time.RFC3339) + "\n")
+				file.WriteString("# Continuous write mode - logs will be appended in real-time\n\n")
 
 				// Write existing entries
 				for _, entry := range m.entries {

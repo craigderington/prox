@@ -28,6 +28,7 @@ type Model struct {
 	logsModel    *LogsModel
 	startInput   textinput.Model
 	inputMode    bool // true when user is typing in the start input
+	pollInterval int  // metrics polling interval in seconds
 }
 
 // Message types for async operations
@@ -45,6 +46,9 @@ func NewModel(manager *process.Manager, storage *storage.Storage) Model {
 	ti.CharLimit = 200
 	ti.Width = 80
 
+	// Load metrics configuration
+	metricsConfig, _ := storage.LoadMetricsConfig()
+
 	return Model{
 		manager:      manager,
 		collector:    process.NewMetricsCollector(manager),
@@ -56,6 +60,7 @@ func NewModel(manager *process.Manager, storage *storage.Storage) Model {
 		monitorModel: nil,
 		startInput:   ti,
 		inputMode:    false,
+		pollInterval: metricsConfig.PollIntervalSeconds,
 	}
 }
 
@@ -63,7 +68,7 @@ func NewModel(manager *process.Manager, storage *storage.Storage) Model {
 func (m Model) Init() tea.Cmd {
 	return tea.Batch(
 		fetchProcesses(m.manager),
-		tickCmd(),
+		tickCmd(m.pollInterval),
 	)
 }
 
@@ -99,8 +104,6 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 // updateDashboard handles dashboard-specific messages
 func (m Model) updateDashboard(msg tea.Msg) (tea.Model, tea.Cmd) {
-	var cmd tea.Cmd
-
 	switch msg := msg.(type) {
 	case tea.KeyMsg:
 		// If in input mode, handle differently
@@ -126,6 +129,7 @@ func (m Model) updateDashboard(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 			default:
 				// Forward key to textinput
+				var cmd tea.Cmd
 				m.startInput, cmd = m.startInput.Update(msg)
 				return m, cmd
 			}
@@ -221,7 +225,7 @@ func (m Model) updateDashboard(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 	case tickMsg:
 		return m, tea.Batch(
-			tickCmd(),
+			tickCmd(m.pollInterval),
 			fetchProcesses(m.manager),
 		)
 
@@ -300,8 +304,12 @@ func (m Model) View() string {
 
 // Commands for async operations
 
-func tickCmd() tea.Cmd {
-	return tea.Tick(time.Second, func(t time.Time) tea.Msg {
+func tickCmd(intervalSeconds ...int) tea.Cmd {
+	seconds := 2 // Default to 2 seconds
+	if len(intervalSeconds) > 0 && intervalSeconds[0] > 0 {
+		seconds = intervalSeconds[0]
+	}
+	return tea.Tick(time.Duration(seconds)*time.Second, func(t time.Time) tea.Msg {
 		return tickMsg(t)
 	})
 }

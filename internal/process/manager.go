@@ -13,7 +13,8 @@ import (
 	"github.com/google/uuid"
 )
 
-// Manager manages all processes
+// Manager manages all processes in the prox system.
+// It handles process lifecycle, monitoring, and coordination.
 type Manager struct {
 	processes map[string]*Process
 	mu        sync.RWMutex
@@ -38,7 +39,9 @@ func (m *Manager) SetStorage(storage Storage) {
 	m.storage = storage
 }
 
-// Start starts a new process with the given configuration
+// Start starts a new process with the given configuration.
+// It validates the config, spawns the process, and begins monitoring.
+// Returns the process instance and any error that occurred.
 func (m *Manager) Start(config ProcessConfig) (*Process, error) {
 	m.mu.Lock()
 	defer m.mu.Unlock()
@@ -266,7 +269,9 @@ func (m *Manager) monitorProcess(proc *Process) {
 	}
 }
 
-// Stop stops a process by name or ID
+// Stop stops a process by name or ID.
+// It performs a graceful shutdown with SIGTERM, then SIGKILL if needed.
+// Returns an error if the process is not found or cannot be stopped.
 func (m *Manager) Stop(nameOrID string) error {
 	m.mu.RLock()
 	proc := m.findProcess(nameOrID)
@@ -429,7 +434,8 @@ func (m *Manager) Delete(nameOrID string) error {
 	return nil
 }
 
-// List returns all managed processes
+// List returns all managed processes sorted alphabetically by name.
+// The returned slice is a copy and can be safely modified by the caller.
 func (m *Manager) List() []*Process {
 	m.mu.RLock()
 	defer m.mu.RUnlock()
@@ -447,7 +453,8 @@ func (m *Manager) List() []*Process {
 	return processes
 }
 
-// Get returns a process by name or ID
+// Get returns a process by name or ID.
+// Returns nil if no process is found with the given identifier.
 func (m *Manager) Get(nameOrID string) *Process {
 	m.mu.RLock()
 	defer m.mu.RUnlock()
